@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ululatrip</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="style/css.css">
+
+  	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  	<style type="text/css">
+  		@font-face {
+		    font-family: Eina03-Regular;
+		    src: url(font/eina-03-regular.woff) format('woff');
+		}
+
+		@font-face {
+		    font-family: Astronout;
+		    src: url(font/Astronout.ttf) format('truetype');
+		}
+
+		@font-face {
+		    font-family: Eina03-SemiBold;
+		    src: url(font/eina-03-semibold.woff) format('woff');
+		    font-weight: 300;
+		}
+
+		@font-face {
+		    font-family: SF Pro Display;
+		    src: url(font/SF-Pro-Display-Regular.otf) format('opentype');
+		}
+
+		@font-face {
+		    font-family: SF Pro Text;
+		    src: url(font/SF-Pro-Text-Regular.otf) format('opentype');
+		}
+
+		body {
+		    font-family: Eina03-Regular;
+		}
+  	</style>
+</head>
+<body>
+
+<div class="d-none d-lg-block">
+<div class="container" style="margin: 0; max-width: 1920px; padding: 0">
+	<div style="border-top: 0.1px solid black; background-image: url('img/home.png'); background-repeat: no-repeat; background-size: cover;">
+		<header class="home-header">
+			<div class="row">
+				<div class="col-9">
+					<ul class="nav">
+						<li><a href="#" class="ululatrip" style="margin-right: 56px; padding: 0px">Ululatrip</a></li>
+						<li><a href="#" class="navbar" style="margin-right: 40px; padding: 0px">Packages</a></li>
+						<li class="dropdown">
+							<a href="#" class="navbar" style="margin-right: 60px; padding: 0px" onmouseover="document.getElementById('state').src='img/icon/expand-state.png'" onmouseout="document.getElementById('state').src='img/icon/minimize-state.png'">Apply As &nbsp;<img src="img/icon/minimize-state.png" width="11" id="state"></a>
+							<div class="dropdown-content">
+								<a href="#" style="padding-top: 24px">Trip Creator</a>
+							   	<a href="#">Merchant</a>
+							</div>
+						</li>
+						<li><a href="#" class="navbar" style="padding: 0px">About Us</a></li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<ul class="nav" style="float: right;">
+						<li><a href="#" class="navbar" style="margin-right: 58px; padding: 0px" data-toggle="modal" data-target="#login-modal">Sign In</a></li>
+						<li><a href="#" class="signup-text" data-toggle="modal" data-target="#signup-modal">SIGN UP</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 exp-peo-trip">
+					Experience. People. Trip.
+				</div>
+			</div>
+			<div class="row">
+				<div id="marketplace" class="col-12">
+					Marketplace that connects you with another you in another place
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<center><button class="button-pink"><a href="#" class="button-pink-text">BE A TRIP CREATOR</a></button></center>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="body">
+		<center><span class="how-we-work">How We Work</span></center>
+		<div style="width: 700px; margin: 0 auto; height: 72px; margin-top: 16px; position: relative;">
+			<center>
+				<span class="description">
+					Ululatrip is an activity platform that connects 3 main actors in the world of travelling
+				</span>
+			</center>
+		</div>
+		<div class="container" style="margin: 0; max-width: 1920px; margin-top: 48px; padding-left: 32px; padding-right: 32px; border-bottom: 1px solid #D4D4D4; padding-bottom: 87.5px">
+			<div class="row">
+				<div class="col-4">
+					<center><img src="img/trip-creator-icon.png" style="margin-bottom: 16px"></center>
+					<center><span class="judul-actor">Trip Creator</span></center>
+					<center><p class="description-actor">You. If you have extra time to earn extra cash by doing the world's most fun thing to do; travel.</p></center>
+				</div>
+				<div class="col-4">
+					<center><img src="img/merchant-icon.png" style="margin-bottom: 16px"></center>
+					<center><span class="judul-actor">Merchant</span></center>
+					<center><p class="description-actor">You. If you own business related to travel; restaurants, bike rent, boat rent, recreation site, you name it.</p></center>
+				</div>
+				<div class="col-4">
+					<center><img src="img/traveler-icon.png" style="margin-bottom: 16px"></center>
+					<center><span class="judul-actor">Traveler</span></center>
+					<center><p class="description-actor">You. If you would love to experience a new way of travelling that suits your personal preferences best.</p></center>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="margin: 0; max-width: 1920px; margin-top: 55.5px; padding-left: 32px; padding-right: 32px; border-bottom: 1px solid #D4D4D4; padding-bottom: 87.5px">
+			<div class="row" style="margin-bottom: 48px">
+				<div class="col-12">
+					<center><span class="hot-trip-package">Hot Trip Package</span></center>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-3">
+					<li class="dropdown-package">
+						<div id="hot-1" class="carousel slide" data-ride="carousel">
+
+						  <!-- Indicators -->
+						  <ul class="carousel-indicators">
+						    <li data-target="#hot-1" data-slide-to="0" class="active"></li>
+						    <li data-target="#hot-1" data-slide-to="1"></li>
+						    <li data-target="#hot-1" data-slide-to="2"></li>
+						  </ul>
+						  
+						  <!-- The slideshow -->
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img src="img/camping.png" class="img-fluid">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="img/camping.png" class="img-fluid">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="img/camping.png" class="img-fluid">
+						    </div>
+						  </div>					 
+						  
+						  <!-- Left and right controls -->
+						  <a class="carousel-control-prev" href="#hot-1" data-slide="prev">
+						    <span class="carousel-control-prev-icon"></span>
+						  </a>
+						  <a class="carousel-control-next" href="#hot-1" data-slide="next">
+						    <span class="carousel-control-next-icon"></span>
+						  </a>
+						</div>
+						<div class="hot-subtitle">Fish Watching</div>
+						<div class="hot-title">Walk On The Water</div>
+						<div class="destination">Sea World | Ancol | Gelang...</div>
+						<div style="margin-top: 16px; padding-bottom: 8px">
+							<img src="img/icon/pin-point.png" width="16" height="16">
+							<span class="lokasi">Jakarta</span><br>
+							<img src="img/icon/time.png" width="16" height="16">
+							<span class="lokasi">1 Day</span>
+							<div class="harga">Rp200.000 per orang</div>
+						</div>
+						<div class="dropdown-package-content">
+							<div style="border: 0.5px solid #979797; margin-bottom: 8px"></div>
+							<div class="row">
+								<div class="col-3">
+									<center><img src="img/icon/icon-hot.png" class="rounded-circle" width="44" height="44"></center>
+								</div>
+								<div class="col-9">
+									<div style="color: #4A4A4A;	font-family: 'SF Pro Text';	font-size: 12px; padding-top: 4px">Deandra Fihanna Marissi</div>
+									<div style="color: #D4D4D4;	font-family: 'SF Pro Text';	font-size: 12px;">Founder of Ululatrip</div>
+								</div>
+							</div>
+							<center><button class="view-package" style="margin-top: 32px;"><a href="#" class="button-pink-text">VIEW PACKAGE</a></button></center>
+						</div>
+					</li>
+				</div>
+				<div class="col-3">
+					<li class="dropdown-package">
+						<div id="hot-2" class="carousel slide" data-ride="carousel">
+
+						  <!-- Indicators -->
+						  <ul class="carousel-indicators">
+						    <li data-target="#hot-2" data-slide-to="0" class="active"></li>
+						    <li data-target="#hot-2" data-slide-to="1"></li>
+						    <li data-target="#hot-2" data-slide-to="2"></li>
+						  </ul>
+						  
+						  <!-- The slideshow -->
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img src="img/camping.png" class="img-fluid">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="img/camping.png" class="img-fluid">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="img/camping.png" class="img-fluid">
+						    </div>
+						  </div>
+						  
+						  <!-- Left and right controls -->
+						  <a class="carousel-control-prev" href="#hot-2" data-slide="prev">
+						    <span class="carousel-control-prev-icon"></span>
+						  </a>
+						  <a class="carousel-control-next" href="#hot-2" data-slide="next">
+						    <span class="carousel-control-next-icon"></span>
+						  </a>
+						</div>
+						<div class="hot-subtitle">Camping</div>
+						<div class="hot-title">Swing Swing Swing</div>
+						<div class="destination">Pancar | Curug Cermin</div>
+						<div style="margin-top: 16px; padding-bottom: 8px">
+							<img src="img/icon/pin-point.png" width="16" height="16">
+							<span class="lokasi">Sentul</span><br>
+							<img src="img/icon/time.png" width="16" height="16">
+							<span class="lokasi">2 Days 1 Night</span>
+							<div class="harga">Rp600.000 per orang</div>
+						</div>
+						<div class="dropdown-package-content">
+							<div style="border: 0.5px solid #979797; margin-bottom: 8px"></div>
+							<div class="row">
+								<div class="col-3">
+									<center><img src="img/icon/icon-hot.png" class="rounded-circle" width="44" height="44"></center>
+								</div>
+								<div class="col-9">
+									<div style="color: #4A4A4A;	font-family: 'SF Pro Text';	font-size: 12px; padding-top: 4px">Deandra Fihanna Marissi</div>
+									<div style="color: #D4D4D4;	font-family: 'SF Pro Text';	font-size: 12px;">Founder of Ululatrip</div>
+									</div>
+							</div>
+							<center><button class="view-package" style="margin-top: 32px;"><a href="#" class="button-pink-text">VIEW PACKAGE</a></button></center>
+						</div>		
+					</li>
+				</div>
+				<div class="col-3">
+					<li class="dropdown-package">
+						<div id="hot-3" class="carousel slide" data-ride="carousel">
+
+						  <!-- Indicators -->
+						  <ul class="carousel-indicators">
+						    <li data-target="#hot-3" data-slide-to="0" class="active"></li>
+						    <li data-target="#hot-3" data-slide-to="1"></li>
+						    <li data-target="#hot-3" data-slide-to="2"></li>
+						  </ul>
+						  
+						  <!-- The slideshow -->
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img src="img/trekking.png" class="img-fluid">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="img/trekking.png" class="img-fluid">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="img/trekking.png" class="img-fluid">
+						    </div>
+						  </div>
+						  
+						  <!-- Left and right controls -->
+						  <a class="carousel-control-prev" href="#hot-3" data-slide="prev">
+						    <span class="carousel-control-prev-icon"></span>
+						  </a>
+						  <a class="carousel-control-next" href="#hot-3" data-slide="next">
+						    <span class="carousel-control-next-icon"></span>
+						  </a>
+						</div>
+						<div class="hot-subtitle">Trekking</div>
+						<div class="hot-title">Off The Beaten Path</div>
+						<div class="destination">Jalur Kuda | Burangrang</div>
+						<div style="margin-top: 16px; padding-bottom: 8px">
+							<img src="img/icon/pin-point.png" width="16" height="16">
+							<span class="lokasi">Jawa Barat</span><br>
+							<img src="img/icon/time.png" width="16" height="16">
+							<span class="lokasi">4 Days 3 Nights</span>
+							<div class="harga">Rp2.000.000 per orang</div>
+						</div>
+						<div class="dropdown-package-content">
+							<div style="border: 0.5px solid #979797; margin-bottom: 8px"></div>
+							<div class="row">
+								<div class="col-3">
+									<center><img src="img/icon/icon-hot.png" class="rounded-circle" width="44" height="44"></center>
+								</div>
+								<div class="col-9">
+									<div style="color: #4A4A4A;	font-family: 'SF Pro Text';	font-size: 12px; padding-top: 4px">Deandra Fihanna Marissi</div>
+									<div style="color: #D4D4D4;	font-family: 'SF Pro Text';	font-size: 12px;">Founder of Ululatrip</div>
+									</div>
+							</div>
+							<center><button class="view-package" style="margin-top: 32px;"><a href="#" class="button-pink-text">VIEW PACKAGE</a></button></center>
+						</div>	
+					</li>
+				</div>
+				<div class="col-3">
+					<li class="dropdown-package">
+						<div id="hot-4" class="carousel slide" data-ride="carousel">
+
+						  <!-- Indicators -->
+						  <ul class="carousel-indicators">
+						    <li data-target="#hot-4" data-slide-to="0" class="active"></li>
+						    <li data-target="#hot-4" data-slide-to="1"></li>
+						    <li data-target="#hot-4" data-slide-to="2"></li>
+						  </ul>
+						  
+						  <!-- The slideshow -->
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img src="img/free-diving.jpg" class="img-fluid">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="img/free-diving.jpg" class="img-fluid">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="img/free-diving.jpg" class="img-fluid">
+						    </div>
+						  </div>
+						  
+						  <!-- Left and right controls -->
+						  <a class="carousel-control-prev" href="#hot-4" data-slide="prev">
+						    <span class="carousel-control-prev-icon"></span>
+						  </a>
+						  <a class="carousel-control-next" href="#hot-4" data-slide="next">
+						    <span class="carousel-control-next-icon"></span>
+						  </a>
+						</div>
+						<div class="hot-subtitle">Free Diving</div>
+						<div class="hot-title">Water Master</div>
+						<div class="destination">Gili Lawa</div>
+						<div style="margin-top: 16px; padding-bottom: 8px">
+							<img src="img/icon/pin-point.png" width="16" height="16">
+							<span class="lokasi">Lombok</span><br>
+							<img src="img/icon/time.png" width="16" height="16">
+							<span class="lokasi">4 Days 3 Nights</span>
+							<div class="harga">Rp3.000.000 per orang</div>
+						</div>
+						<div class="dropdown-package-content">
+							<div style="border: 0.5px solid #979797; margin-bottom: 8px"></div>
+							<div class="row">
+								<div class="col-3">
+									<center><img src="img/icon/icon-hot.png" class="rounded-circle" width="44" height="44"></center>
+								</div>
+								<div class="col-9">
+									<div style="color: #4A4A4A;	font-family: 'SF Pro Text';	font-size: 12px; padding-top: 4px">Deandra Fihanna Marissi</div>
+									<div style="color: #D4D4D4;	font-family: 'SF Pro Text';	font-size: 12px;">Founder of Ululatrip</div>
+									</div>
+							</div>
+							<center><button class="view-package" style="margin-top: 32px;"><a href="#" class="button-pink-text">VIEW PACKAGE</a></button></center>
+						</div>
+					</li>
+				</div>
+				<div class="col-12">
+					<center><div style="margin-top: 40px;"><a href="#" id="see-all-packages">See All Packages ></a></div></center>
+				</div>
+			</div>
+		</div>
+		<div style="background-image: url('img/trip-creator-rank.png'); background-repeat: no-repeat; background-size: cover; border: 0.1px solid black; padding-bottom: 48px">
+			<div class="container" style="margin: 0; max-width: 1920px">
+				<div class="row">
+					<div class="col-12">
+						<center><div class="trip-creator-rank" style="margin-bottom: 17.5px">Trip Creator Rank</div></center>
+						<center><div style="border:1px solid #D4D4D4; width: 48%; margin-bottom: 48px; opacity: 0.3"></div></center>
+					</div>
+					<div class="col-3"></div>
+					<div class="col-6">
+						<div style="width: 5%; display: inline-block; position: absolute; top: 30%">
+							<span class="number">1. </span>
+						</div>
+						<div style="width: 10%; display: inline-block; position: absolute; left: 8%; top: 10%">
+							<center><img src="img/icon/icon-hot.png" class="rounded-circle"></center>
+						</div>
+						<div style="width: 80%; display: inline-block; padding-left: 24px; margin-left: 18%">
+							<div class="trip-creator-rank-name">Deandra Fihanna Marissi</div>
+							<div class="trip-creator-rank-job">Founder of Ululatrip</div>
+							<div class="trip-creator-rank-quote">Increasing Prosperity With Positive Thinking</div>
+						</div>
+					</div>
+					<div class="col-3"></div>
+					<div class="col-12" style="margin-top: 16px"></div>
+					<div class="col-3"></div>
+					<div class="col-6">
+						<div style="width: 5%; display: inline-block; position: absolute; top: 30%">
+							<span class="number">2. </span>
+						</div>
+						<div style="width: 10%; display: inline-block; position: absolute; left: 8%; top: 10%">
+							<center><img src="img/icon/icon-hot.png" class="rounded-circle"></center>
+						</div>
+						<div style="width: 80%; display: inline-block; padding-left: 24px; margin-left: 18%">
+							<div class="trip-creator-rank-name">Marc Huff</div>
+							<div class="trip-creator-rank-job">Volcano Master</div>
+							<div class="trip-creator-rank-quote">Fear of Driving and Automatic Negative Thoughts</div>
+						</div>
+					</div>
+					<div class="col-3"></div>
+					<div class="col-12" style="margin-top: 16px"></div>
+					<div class="col-3"></div>
+					<div class="col-6">
+						<div style="width: 5%; display: inline-block; position: absolute; top: 30%">
+							<span class="number">3. </span>
+						</div>
+						<div style="width: 10%; display: inline-block; position: absolute; left: 8%; top: 10%">
+							<center><img src="img/icon/icon-hot.png" class="rounded-circle"></center>
+						</div>
+						<div style="width: 80%; display: inline-block; padding-left: 24px; margin-left: 18%">
+							<div class="trip-creator-rank-name">Phillip Watts</div>
+							<div class="trip-creator-rank-job">Teacher</div>
+							<div class="trip-creator-rank-quote">Peace on Earth A Wonderful Wish But No Way</div>
+						</div>
+					</div>
+					<div class="col-3"></div>
+					<div class="col-12" style="margin-top: 40px">
+						<center><a href="#" class="show-all"> Show All ></a></center>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-us-wrapper">
+			<div class="container" style="margin: 0; max-width: 1920px">
+				<div class="row">
+					<div class="col-12">
+						<center><span class="about-us">About Us</span></center>
+					</div>
+					<div class="col-12" style="margin-top: 40px"></div>
+					<div class="col-12">
+						<center><span class="ululatrip" style="font-size: 28px">Ululatrip</span></center>
+					</div>
+					<div class="col-12" style="margin-top: 32px"></div>
+					<div style="width: 15%"></div>
+					<div style="width: 70%">
+						<center>
+							<span class="about-us-desc">
+								You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property as a vacation rental to help defray the costs of ownership. How do you price a vacation home rental without overcharging but making enough to cover your costs? Do your research.
+							</span>
+						</center>
+					</div>
+					<div style="width: 15%"></div>
+					<div class="col-12" style="margin-top: 32px"></div>
+					<div class="col-4"></div>
+					<div class="col-4">
+						<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+						<div class="col-3">
+							<center><a href="#">
+								<img src="img/icon/instagram.png" onmouseover="this.src='img/icon/instagram-pink.png'" onmouseout="this.src='img/icon/instagram.png'">
+							</a></center>
+						</div>
+						<div class="col-3">
+							<center>
+								<a href="#"><img src="img/icon/facebook.png" onmouseover="this.src='img/icon/facebook-pink.png'" onmouseout="this.src='img/icon/facebook.png'"></a>
+							</center>
+						</div>
+						<div class="col-3">
+							<center>
+								<a href="#"><img src="img/icon/line.png" onmouseover="this.src='img/icon/line-pink.png'" onmouseout="this.src='img/icon/line.png'"></a>
+							</center>
+						</div>
+						<div class="col-3">
+							<center>
+								<a href="#"><img src="img/icon/whatsapp.png" onmouseover="this.src='img/icon/whatsapp-pink.png'" onmouseout="this.src='img/icon/whatsapp.png'"></a>
+							</center>
+						</div>
+					</div>
+					</div>
+					<div class="col-4"></div>
+					<div class="col-12" style="margin-bottom: 80px"></div>
+				</div>
+			</div>
+		</div>
+		<div class="sign-up-now">
+			<div class="container" style="margin: 0; max-width: 1920px;">
+				<div class="row">
+					<div class="col-12" style="padding-top: 56px;"></div>
+					<div class="col-12">
+						<center><span id="what-are-you-waiting">What Are You Waiting For?</span></center>
+					</div>
+					<div class="col-12" style="padding-top: 40px;"></div>
+					<div class="col-12">
+						<center><a href="#" type="button" class="btn sign-up-now-btn"><span style="position: absolute; left: 34%; top: 20%">SIGN UP NOW</span></a></center>
+					</div>
+					<div class="col-12" style="padding-bottom: 56px;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container" style="margin: 0; max-width: 1920px;">
+				<div class="row">
+					<div class="col-12" style="padding-top: 56px"></div>
+					<div class="col-12">
+						<center><span class="ululatrip" style="font-size: 44px; color: #4A4A4A">Ululatrip</span></center>
+					</div>
+					<div class="col-12" style="padding-top: 24px"></div>
+					<div class="col-1"></div>
+					<div class="col-10">
+						<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+							<div class="col-2">
+								<center><a href="#" class="footer-text">About Us</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">Apply Trip Creator</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">Apply Merchant</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">Contact</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">F.A.Q</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">Package</a></center>
+							</div>
+						</div>
+					</div>
+					<div class="col-1"></div>
+					<div class="col-12" style="margin-top: 8px"></div>
+					<div class="col-3"></div>
+					<div class="col-6">
+						<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+							<div class="col-4">
+								<center><a href="#" class="footer-text-2">Privacy Policy</a></center>
+							</div>
+							<div class="col-4">
+								<center><a href="#" class="footer-text-2">Site Map</a></center>
+							</div>
+							<div class="col-4">
+								<center><a href="#" class="footer-text-2">© 2018 Ululatrip</a></center>
+							</div>
+						</div>
+					</div>
+					<div class="col-3"></div>
+					<div class="col-12" style="margin-top: 40px"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="d-none d-sm-block d-lg-none">
+	<div class="container" style="margin: 0; max-width: 1024px; padding: 0">
+		<div style="border-top: 0.1px solid black; background-image: url('img/home.png'); background-repeat: no-repeat; background-size: cover;">
+			<div class="home-header-tablet">
+				<div class="row">
+					<div class="col-8">
+						<ul class="nav">
+							<li><a href="#" class="ululatrip-tablet"  style="padding: 0; margin-right: 38.5px">Ululatrip</a></li>
+							<li><a href="#" class="navbar-tablet" style="margin-right: 24px; padding: 0px">Packages</a></li>
+							<li class="dropdown">
+								<a href="#" class="navbar-tablet" style="margin-right: 24px; padding: 0px" onmouseover="document.getElementById('state-tablet').src='img/icon/expand-state.png'" onmouseout="document.getElementById('state-tablet').src='img/icon/minimize-state.png'">Apply As &nbsp;<img src="img/icon/minimize-state.png" width="11" id="state-tablet"></a>
+								<div class="dropdown-content">
+									<a href="#">Trip Creator</a>
+								   	<a href="#">Merchant</a>
+								</div>
+							</li>
+							<li><a href="#" class="navbar-tablet" style="padding: 0px; margin-left: 20px">About Us</a></li>
+						</ul>
+					</div>
+					<div class="col-4">
+						<ul class="nav" style="float: right;">
+							<li><a href="#" class="navbar-tablet" style="margin-right: 24px; padding: 0px" data-toggle="modal" data-target="#login-modal">Sign In</a></li>
+							<li><a href="#" class="signup-text-tablet">SIGN UP</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 exp-peo-trip" style="margin-top: 62px; font-size: 55px">
+						Experience. People. Trip.
+					</div>
+				</div>
+				<div class="row">
+					<div id="marketplace" class="col-12">
+						Marketplace that connects you with another you in another place
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<center><button class="button-pink"><a href="#" class="button-pink-text">BE A TRIP CREATOR</a></button></center>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="body" style="background-color: #FFFFFF">
+			<center><span class="how-we-work">How We Work</span></center>
+			<div style="width: 652px; margin: 0 auto; height: 72px; margin-top: 16px; position: relative;">
+				<center>
+					<span class="description">
+						Ululatrip is an activity platform that connects 3 main actors in the world of travelling
+					</span>
+				</center>
+			</div>
+			<div class="container" style="margin: 0; max-width: 1024px; margin-top: 48px; padding-left: 46px; padding-right: 24px; border-bottom: 1px solid #D4D4D4; padding-bottom: 87.5px">
+				<div class="row">
+					<div class="col-4">
+						<center><img src="img/trip-creator-icon.png" style="margin-bottom: 16px"></center>
+						<center><span class="judul-actor">Trip Creator</span></center>
+						<center><p class="description-actor-tablet">You. If you have extra time to earn extra cash by doing the world's most fun thing to do; travel.</p></center>
+					</div>
+					<div class="col-4">
+						<center><img src="img/merchant-icon.png" style="margin-bottom: 16px"></center>
+						<center><span class="judul-actor">Merchant</span></center>
+						<center><p class="description-actor-tablet">You. If you own business related to travel; restaurants, bike rent, boat rent, recreation site, you name it.</p></center>
+					</div>
+					<div class="col-4">
+						<center><img src="img/traveler-icon.png" style="margin-bottom: 16px"></center>
+						<center><span class="judul-actor">Traveler</span></center>
+						<center><p class="description-actor-tablet">You. If you would love to experience a new way of travelling that suits your personal preferences best.</p></center>
+					</div>
+				</div>
+			</div>
+			<div class="container" style="margin: 0; max-width: 1024px; margin-top: 55px; padding-left: 48px; padding-right: 48px; border-bottom: 1px solid #D4D4D4; padding-bottom: 87.5px">
+				<div class="row" style="margin-bottom: 48px">
+					<div class="col-12">
+						<center><span class="hot-trip-package">Hot Trip Package</span></center>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<li class="dropdown-package">
+							<div id="hot-1" class="carousel slide" data-ride="carousel">
+
+							  <!-- Indicators -->
+							  <ul class="carousel-indicators">
+							    <li data-target="#hot-1" data-slide-to="0" class="active"></li>
+							    <li data-target="#hot-1" data-slide-to="1"></li>
+							    <li data-target="#hot-1" data-slide-to="2"></li>
+							  </ul>
+							  
+							  <!-- The slideshow -->
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							  </div>					 
+							  
+							  <!-- Left and right controls -->
+							  <a class="carousel-control-prev" href="#hot-1" data-slide="prev">
+							    <span class="carousel-control-prev-icon"></span>
+							  </a>
+							  <a class="carousel-control-next" href="#hot-1" data-slide="next">
+							    <span class="carousel-control-next-icon"></span>
+							  </a>
+							</div>
+							<div class="hot-subtitle">Fish Watching</div>
+							<div class="hot-title">Walk On The Water</div>
+							<div class="destination">Sea World | Ancol | Gelang...</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">1 Day</span>
+								<div class="harga">Rp200.000 per orang</div>
+							</div>
+							<div class="dropdown-package-content">
+								<div style="border: 0.5px solid #979797; margin-bottom: 8px"></div>
+								<div class="row">
+									<div class="col-3">
+										<center><img src="img/icon/icon-hot.png" class="rounded-circle" width="44" height="44"></center>
+									</div>
+									<div class="col-9">
+										<div style="color: #4A4A4A;	font-family: 'SF Pro Text';	font-size: 12px; padding-top: 4px">Deandra Fihanna Marissi</div>
+										<div style="color: #D4D4D4;	font-family: 'SF Pro Text';	font-size: 12px;">Founder of Ululatrip</div>
+									</div>
+								</div>
+								<center><button class="view-package" style="margin-top: 32px;"><a href="#" class="button-pink-text">VIEW PACKAGE</a></button></center>
+							</div>
+						</li>
+					</div>
+					<div class="col-4">
+						<li class="dropdown-package">
+							<div id="hot-1" class="carousel slide" data-ride="carousel">
+
+							  <!-- Indicators -->
+							  <ul class="carousel-indicators">
+							    <li data-target="#hot-1" data-slide-to="0" class="active"></li>
+							    <li data-target="#hot-1" data-slide-to="1"></li>
+							    <li data-target="#hot-1" data-slide-to="2"></li>
+							  </ul>
+							  
+							  <!-- The slideshow -->
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							  </div>					 
+							  
+							  <!-- Left and right controls -->
+							  <a class="carousel-control-prev" href="#hot-1" data-slide="prev">
+							    <span class="carousel-control-prev-icon"></span>
+							  </a>
+							  <a class="carousel-control-next" href="#hot-1" data-slide="next">
+							    <span class="carousel-control-next-icon"></span>
+							  </a>
+							</div>
+							<div class="hot-subtitle">Fish Watching</div>
+							<div class="hot-title">Walk On The Water</div>
+							<div class="destination">Sea World | Ancol | Gelang...</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">1 Day</span>
+								<div class="harga">Rp200.000 per orang</div>
+							</div>
+							<div class="dropdown-package-content">
+								<div style="border: 0.5px solid #979797; margin-bottom: 8px"></div>
+								<div class="row">
+									<div class="col-3">
+										<center><img src="img/icon/icon-hot.png" class="rounded-circle" width="44" height="44"></center>
+									</div>
+									<div class="col-9">
+										<div style="color: #4A4A4A;	font-family: 'SF Pro Text';	font-size: 12px; padding-top: 4px">Deandra Fihanna Marissi</div>
+										<div style="color: #D4D4D4;	font-family: 'SF Pro Text';	font-size: 12px;">Founder of Ululatrip</div>
+									</div>
+								</div>
+								<center><button class="view-package" style="margin-top: 32px;"><a href="#" class="button-pink-text">VIEW PACKAGE</a></button></center>
+							</div>
+						</li>
+					</div>
+					<div class="col-4">
+						<li class="dropdown-package">
+							<div id="hot-1" class="carousel slide" data-ride="carousel">
+
+							  <!-- Indicators -->
+							  <ul class="carousel-indicators">
+							    <li data-target="#hot-1" data-slide-to="0" class="active"></li>
+							    <li data-target="#hot-1" data-slide-to="1"></li>
+							    <li data-target="#hot-1" data-slide-to="2"></li>
+							  </ul>
+							  
+							  <!-- The slideshow -->
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							  </div>					 
+							  
+							  <!-- Left and right controls -->
+							  <a class="carousel-control-prev" href="#hot-1" data-slide="prev">
+							    <span class="carousel-control-prev-icon"></span>
+							  </a>
+							  <a class="carousel-control-next" href="#hot-1" data-slide="next">
+							    <span class="carousel-control-next-icon"></span>
+							  </a>
+							</div>
+							<div class="hot-subtitle">Fish Watching</div>
+							<div class="hot-title">Walk On The Water</div>
+							<div class="destination">Sea World | Ancol | Gelang...</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">1 Day</span>
+								<div class="harga">Rp200.000 per orang</div>
+							</div>
+							<div class="dropdown-package-content">
+								<div style="border: 0.5px solid #979797; margin-bottom: 8px"></div>
+								<div class="row">
+									<div class="col-3">
+										<center><img src="img/icon/icon-hot.png" class="rounded-circle" width="44" height="44"></center>
+									</div>
+									<div class="col-9">
+										<div style="color: #4A4A4A;	font-family: 'SF Pro Text';	font-size: 12px; padding-top: 4px">Deandra Fihanna Marissi</div>
+										<div style="color: #D4D4D4;	font-family: 'SF Pro Text';	font-size: 12px;">Founder of Ululatrip</div>
+									</div>
+								</div>
+								<center><button class="view-package" style="margin-top: 32px;"><a href="#" class="button-pink-text">VIEW PACKAGE</a></button></center>
+							</div>
+						</li>
+					</div>
+				</div>
+			</div>
+			<div style="background-image: url('img/trip-creator-rank.png'); background-repeat: no-repeat; background-size: cover; border: 0.1px solid black; padding-bottom: 48px">
+				<div class="container" style="margin: 0; max-width: 1024px">
+					<div class="row">
+						<div class="col-12">
+							<center><div class="trip-creator-rank" style="margin-bottom: 17.5px">Trip Creator Rank</div></center>
+							<center><div style="border:1px solid #D4D4D4; width: 55%; margin-bottom: 48px; opacity: 0.3"></div></center>
+						</div>
+						<div class="col-3"></div>
+						<div class="col-6">
+							<div style="display: inline-block; position: absolute; top: 30%; left: 0">
+								<span class="number">1. </span>
+							</div>
+							<div style="display: inline-block; position: absolute; left: 8%; top: 10%">
+								<center><img src="img/icon/icon-hot.png" class="rounded-circle"></center>
+							</div>
+							<div style="display: inline-block; padding-left: 24px; margin-left: 20%; margin-top: 3%">
+								<div class="trip-creator-rank-name">Deandra Fihanna Marissi</div>
+								<div class="trip-creator-rank-job">Founder of Ululatrip</div>
+							</div>
+						</div>
+						<div class="col-3"></div>
+						<div class="col-12" style="margin-top: 16px"></div>
+						<div class="col-3"></div>
+						<div class="col-6">
+							<div style="display: inline-block; position: absolute; top: 30%; left: 0">
+								<span class="number">1. </span>
+							</div>
+							<div style="display: inline-block; position: absolute; left: 8%; top: 10%">
+								<center><img src="img/icon/icon-hot.png" class="rounded-circle"></center>
+							</div>
+							<div style="display: inline-block; padding-left: 24px; margin-left: 20%; margin-top: 3%">
+								<div class="trip-creator-rank-name">Deandra Fihanna Marissi</div>
+								<div class="trip-creator-rank-job">Founder of Ululatrip</div>
+							</div>
+						</div>
+						<div class="col-3"></div>
+						<div class="col-12" style="margin-top: 16px"></div>
+						<div class="col-3"></div>
+						<div class="col-6">
+							<div style="display: inline-block; position: absolute; top: 30%; left: 0">
+								<span class="number">1. </span>
+							</div>
+							<div style="display: inline-block; position: absolute; left: 8%; top: 10%">
+								<center><img src="img/icon/icon-hot.png" class="rounded-circle"></center>
+							</div>
+							<div style="display: inline-block; padding-left: 24px; margin-left: 20%; margin-top: 3%">
+								<div class="trip-creator-rank-name">Deandra Fihanna Marissi</div>
+								<div class="trip-creator-rank-job">Founder of Ululatrip</div>
+							</div>
+						</div>
+						<div class="col-3"></div>
+						<div class="col-12" style="margin-top: 40px">
+							<center><a href="#" class="show-all"> Show All ></a></center>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about-us-wrapper" style="background-color: #FFFFFF">
+				<div class="container" style="margin: 0; max-width: 1024px">
+					<div class="row">
+						<div class="col-12">
+							<center><span class="about-us">About Us</span></center>
+						</div>
+						<div class="col-12" style="margin-top: 40px"></div>
+						<div class="col-12">
+							<center><span class="ululatrip" style="font-size: 28px">Ululatrip</span></center>
+						</div>
+						<div class="col-12" style="margin-top: 32px"></div>
+						<div style="width: 5%"></div>
+						<div style="width: 90%">
+							<center>
+								<span class="about-us-desc-tablet">
+									You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property as a vacation rental to help defray the costs of ownership. How do you price a vacation home rental without overcharging but making enough to cover your costs? Do your research.
+								</span>
+							</center>
+						</div>
+						<div style="width: 5%"></div>
+						<div class="col-12" style="margin-top: 32px"></div>
+						<div class="col-3"></div>
+						<div class="col-6">
+							<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+								<div class="col-3">
+									<center>
+										<a href="#"><img src="img/icon/instagram.png" onmouseover="this.src='img/icon/instagram-pink.png'" onmouseout="this.src='img/icon/instagram.png'">
+										</a>
+									</center>
+								</div>
+								<div class="col-3">
+									<center>
+										<a href="#"><img src="img/icon/facebook.png" onmouseover="this.src='img/icon/facebook-pink.png'" onmouseout="this.src='img/icon/facebook.png'"></a>
+									</center>
+								</div>
+								<div class="col-3">
+									<center>
+										<a href="#"><img src="img/icon/line.png" onmouseover="this.src='img/icon/line-pink.png'" onmouseout="this.src='img/icon/line.png'"></a>
+									</center>
+								</div>
+								<div class="col-3">
+									<center>
+										<a href="#"><img src="img/icon/whatsapp.png" onmouseover="this.src='img/icon/whatsapp-pink.png'" onmouseout="this.src='img/icon/whatsapp.png'"></a>
+									</center>
+								</div>
+							</div>
+						</div>
+						<div class="col-3"></div>
+						<div class="col-12" style="margin-bottom: 88px"></div>
+					</div>
+				</div>
+			</div>
+			<div class="sign-up-now">
+				<div class="container" style="margin: 0; max-width: 1024px;">
+					<div class="row">
+						<div class="col-12" style="padding-top: 50px;">
+							<center><span id="what-are-you-waiting">What Are You Waiting For?</span></center>
+						</div>
+						<div class="col-12" style="padding-top: 50px; padding-bottom: 50px">
+							<center><a href="#" type="button" class="btn sign-up-now-btn" style="width: 327px"><span style="position: absolute; left: 34%; top: 20%">SIGN UP NOW</span></a></center>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container" style="margin: 0; max-width: 1024px;">
+					<div class="row">
+						<div class="col-12" style="margin-top: 56px">
+							<center><span class="ululatrip-tablet" style="font-size: 44px; color: #4A4A4A">Ululatrip</span></center>
+						</div>
+						<div class="col-12" style="padding-top: 24px"></div>
+						<div class="col-12">
+							<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+								<div style="width: 15%">
+									<center><a href="#" class="footer-text">About Us</a></center>
+								</div>
+								<div style="width: 20%">
+									<center><a href="#" class="footer-text">Apply Trip Creator</a></center>
+								</div>
+								<div style="width: 20%">
+									<center><a href="#" class="footer-text">Apply Merchant</a></center>
+								</div>
+								<div style="width: 15%">
+									<center><a href="#" class="footer-text">Contact</a></center>
+								</div>
+								<div style="width: 15%">
+									<center><a href="#" class="footer-text">F.A.Q</a></center>
+								</div>
+								<div style="width: 15%">
+									<center><a href="#" class="footer-text">Package</a></center>
+								</div>
+							</div>
+						</div>
+						<div class="col-12" style="margin-top: 8px"></div>
+						<div class="col-3"></div>
+						<div class="col-6">
+							<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+								<div class="col-4">
+									<center><a href="#" class="footer-text-2">Privacy Policy</a></center>
+								</div>
+								<div class="col-4">
+									<center><a href="#" class="footer-text-2">Site Map</a></center>
+								</div>
+								<div class="col-4">
+									<center><a href="#" class="footer-text-2">© 2018 Ululatrip</a></center>
+								</div>
+							</div>
+						</div>
+						<div class="col-3"></div>
+						<div class="col-12" style="margin-top: 88px"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="d-sm-none">
+	<div class="container" style="margin: 0; max-width: 768px; padding: 0">
+		<div style="border-top: 0.1px solid black; background-image: url('img/home.png'); background-repeat: no-repeat; background-size: cover;">
+			<div class="home-header-sp">
+				<div class="row">
+					<div class="col-10">
+						<ul class="nav">
+							<li><a href="#" class="ululatrip-sp" style="padding: 0">Ululatrip</a></li>
+						</ul>
+					</div>
+					<div class="col-2">
+						<ul class="nav">
+							<li>
+								<a href="#"><img src="img/icon/hamburger-menu.png" width="16"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 exp-peo-trip-sp">
+						Experience. People. Trip.
+					</div>
+				</div>
+				<div class="row">
+					<center>
+						<div id="marketplace-sp" style="width: 70%">
+							Marketplace that connects you with another you in another place
+						</div>
+					</center>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<center><button class="button-pink-sp"><a href="#" class="button-pink-text">BE A TRIP CREATOR</a></button></center>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="body">
+			<center><div class="how-we-work-sp">How We Work</div></center>
+			<div style="width: 230px; margin: 0 auto; height: 72px; margin-top: 16px; margin-bottom: 48px; position: relative;">
+				<center>
+					<span class="description-sp">
+						Ululatrip is an activity platform that connects 3 main actors in the world of travelling
+					</span>
+				</center>
+			</div>
+			<div class="container" style="margin: 0; max-width: 768px; padding-top: 48px; padding-left: 40px; padding-right: 40px; border-bottom: 1px solid #D4D4D4; padding-bottom: 88px">
+				<div class="row">
+					<div class="col-12">
+						<center><img src="img/trip-creator-icon.png" style="margin-bottom: 16px"></center>
+						<center><span class="judul-actor">Trip Creator</span></center>
+						<center><p class="description-actor-sp">You. If you have extra time to earn extra cash by doing the world's most fun thing to do; travel.</p></center>
+					</div>
+					<div class="col-12" style="margin-top: 48px">
+						<center><img src="img/merchant-icon.png" style="margin-bottom: 16px"></center>
+						<center><span class="judul-actor">Merchant</span></center>
+						<center><p class="description-actor-sp">You. If you own business related to travel; restaurants, bike rent, boat rent, recreation site, you name it.</p></center>
+					</div>
+					<div class="col-12" style="margin-top: 48px">
+						<center><img src="img/traveler-icon.png" style="margin-bottom: 16px"></center>
+						<center><span class="judul-actor">Traveler</span></center>
+						<center><p class="description-actor-tablet">You. If you would love to experience a new way of travelling that suits your personal preferences best.</p></center>
+					</div>
+				</div>
+			</div>
+			<div class="container" style="margin: 0; max-width: 768px; margin-top: 70px; padding-left: 40px; padding-right: 40px; border-bottom: 1px solid #D4D4D4; padding-bottom: 88px">
+				<div class="row" style="margin-bottom: 48px">
+					<div class="col-12">
+						<center><span class="hot-trip-package-sp">Hot Trip Package</span></center>
+					</div>
+				</div>
+				<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+					<li class="dropdown-package" style="margin-right: 24px">
+						<div id="hot-1" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							  <ul class="carousel-indicators">
+							    <li data-target="#hot-1" data-slide-to="0" class="active"></li>
+							    <li data-target="#hot-1" data-slide-to="1"></li>
+							    <li data-target="#hot-1" data-slide-to="2"></li>
+							  </ul>
+							  
+							  <!-- The slideshow -->
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							  </div>					 
+							  
+							  <!-- Left and right controls -->
+							  <a class="carousel-control-prev" href="#hot-1" data-slide="prev">
+							    <span class="carousel-control-prev-icon"></span>
+							  </a>
+							  <a class="carousel-control-next" href="#hot-1" data-slide="next">
+							    <span class="carousel-control-next-icon"></span>
+							  </a>
+						</div>
+						<div class="hot-subtitle">Fish Watching</div>
+						<div class="hot-title">Walk On The Water</div>
+						<div class="destination">Sea World | Ancol | Gelang...</div>
+						<div style="margin-top: 16px; padding-bottom: 8px">
+							<img src="img/icon/pin-point.png" width="16" height="16">
+							<span class="lokasi">Jakarta</span><br>
+							<img src="img/icon/time.png" width="16" height="16">
+							<span class="lokasi">1 Day</span>
+							<div class="harga">Rp200.000 per orang</div>
+						</div>
+						<div class="dropdown-package-content">
+							<div style="border: 0.5px solid #979797; margin-bottom: 8px"></div>
+							<div class="row">
+								<div class="col-3">
+									<center><img src="img/icon/icon-hot.png" class="rounded-circle" width="44" height="44"></center>
+								</div>
+								<div class="col-9">
+									<div style="color: #4A4A4A;	font-family: 'SF Pro Text';	font-size: 12px; padding-top: 4px">Deandra Fihanna Marissi</div>
+									<div style="color: #D4D4D4;	font-family: 'SF Pro Text';	font-size: 12px;">Founder of Ululatrip</div>
+								</div>
+							</div>
+							<center><button class="view-package" style="margin-top: 32px;"><a href="#" class="button-pink-text">VIEW PACKAGE</a></button></center>
+						</div>
+					</li>
+					<li class="dropdown-package" style="margin-right: 24px">
+						<div id="hot-1" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							  <ul class="carousel-indicators">
+							    <li data-target="#hot-1" data-slide-to="0" class="active"></li>
+							    <li data-target="#hot-1" data-slide-to="1"></li>
+							    <li data-target="#hot-1" data-slide-to="2"></li>
+							  </ul>
+							  
+							  <!-- The slideshow -->
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							  </div>					 
+							  
+							  <!-- Left and right controls -->
+							  <a class="carousel-control-prev" href="#hot-1" data-slide="prev">
+							    <span class="carousel-control-prev-icon"></span>
+							  </a>
+							  <a class="carousel-control-next" href="#hot-1" data-slide="next">
+							    <span class="carousel-control-next-icon"></span>
+							  </a>
+						</div>
+						<div class="hot-subtitle">Fish Watching</div>
+						<div class="hot-title">Walk On The Water</div>
+						<div class="destination">Sea World | Ancol | Gelang...</div>
+						<div style="margin-top: 16px; padding-bottom: 8px">
+							<img src="img/icon/pin-point.png" width="16" height="16">
+							<span class="lokasi">Jakarta</span><br>
+							<img src="img/icon/time.png" width="16" height="16">
+							<span class="lokasi">1 Day</span>
+							<div class="harga">Rp200.000 per orang</div>
+						</div>
+						<div class="dropdown-package-content">
+							<div style="border: 0.5px solid #979797; margin-bottom: 8px"></div>
+							<div class="row">
+								<div class="col-3">
+									<center><img src="img/icon/icon-hot.png" class="rounded-circle" width="44" height="44"></center>
+								</div>
+								<div class="col-9">
+									<div style="color: #4A4A4A;	font-family: 'SF Pro Text';	font-size: 12px; padding-top: 4px">Deandra Fihanna Marissi</div>
+									<div style="color: #D4D4D4;	font-family: 'SF Pro Text';	font-size: 12px;">Founder of Ululatrip</div>
+								</div>
+							</div>
+							<center><button class="view-package" style="margin-top: 32px;"><a href="#" class="button-pink-text">VIEW PACKAGE</a></button></center>
+						</div>
+					</li>
+					<li class="dropdown-package" style="margin-right: 24px">
+						<div id="hot-1" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							  <ul class="carousel-indicators">
+							    <li data-target="#hot-1" data-slide-to="0" class="active"></li>
+							    <li data-target="#hot-1" data-slide-to="1"></li>
+							    <li data-target="#hot-1" data-slide-to="2"></li>
+							  </ul>
+							  
+							  <!-- The slideshow -->
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/camping.png" class="img-fluid">
+							    </div>
+							  </div>					 
+							  
+							  <!-- Left and right controls -->
+							  <a class="carousel-control-prev" href="#hot-1" data-slide="prev">
+							    <span class="carousel-control-prev-icon"></span>
+							  </a>
+							  <a class="carousel-control-next" href="#hot-1" data-slide="next">
+							    <span class="carousel-control-next-icon"></span>
+							  </a>
+						</div>
+						<div class="hot-subtitle">Fish Watching</div>
+						<div class="hot-title">Walk On The Water</div>
+						<div class="destination">Sea World | Ancol | Gelang...</div>
+						<div style="margin-top: 16px; padding-bottom: 8px">
+							<img src="img/icon/pin-point.png" width="16" height="16">
+							<span class="lokasi">Jakarta</span><br>
+							<img src="img/icon/time.png" width="16" height="16">
+							<span class="lokasi">1 Day</span>
+							<div class="harga">Rp200.000 per orang</div>
+						</div>
+						<div class="dropdown-package-content">
+							<div style="border: 0.5px solid #979797; margin-bottom: 8px"></div>
+							<div class="row">
+								<div class="col-3">
+									<center><img src="img/icon/icon-hot.png" class="rounded-circle" width="44" height="44"></center>
+								</div>
+								<div class="col-9">
+									<div style="color: #4A4A4A;	font-family: 'SF Pro Text';	font-size: 12px; padding-top: 4px">Deandra Fihanna Marissi</div>
+									<div style="color: #D4D4D4;	font-family: 'SF Pro Text';	font-size: 12px;">Founder of Ululatrip</div>
+								</div>
+							</div>
+							<center><button class="view-package" style="margin-top: 32px;"><a href="#" class="button-pink-text">VIEW PACKAGE</a></button></center>
+						</div>
+					</li>
+				</div>
+				<div class="col-12">
+					<center><div style="margin-top: 40px;"><a href="#" id="see-all-packages">See All Packages ></a></div></center>
+				</div>
+			</div>
+			<div style="background-image: url('img/trip-creator-rank.png'); background-repeat: no-repeat; background-size: cover; border: 0.1px solid black; padding-bottom: 48px">
+				<div class="container" style="margin: 0; max-width: 768px">
+					<div class="row">
+						<div class="col-12">
+							<center><div class="trip-creator-rank-sp" style="margin-bottom: 18px">Trip Creator Rank</div></center>
+							<center><div style="border:1px solid #D4D4D4; width: 85%; margin-bottom: 48px; opacity: 0.3"></div></center>
+						</div>
+						<div class="col-12">
+							<div style="display: inline-block; position: absolute; top: 20%; left: 10%">
+								<span class="number-sp">1. </span>
+							</div>
+							<div style="display: inline-block; position: absolute; left: 18%; top: 10%">
+								<center><img src="img/icon/icon-hot.png" class="rounded-circle" width="39"></center>
+							</div>
+							<div style="display: inline-block; padding-left: 24px; margin-left: 25%; margin-top: 3%">
+								<div class="trip-creator-rank-name-sp">Deandra Fihanna Marissi</div>
+								<div class="trip-creator-rank-job-sp">Founder of Ululatrip</div>
+							</div>
+						</div>
+						<div class="col-12" style="margin-top: 16px">
+							<div style="display: inline-block; position: absolute; top: 20%; left: 10%">
+								<span class="number-sp">1. </span>
+							</div>
+							<div style="display: inline-block; position: absolute; left: 18%; top: 10%">
+								<center><img src="img/icon/icon-hot.png" class="rounded-circle" width="39"></center>
+							</div>
+							<div style="display: inline-block; padding-left: 24px; margin-left: 25%; margin-top: 3%">
+								<div class="trip-creator-rank-name-sp">Deandra Fihanna Marissi</div>
+								<div class="trip-creator-rank-job-sp">Founder of Ululatrip</div>
+							</div>
+						</div>
+						<div class="col-12" style="margin-top: 16px">
+							<div style="display: inline-block; position: absolute; top: 20%; left: 10%">
+								<span class="number-sp">1. </span>
+							</div>
+							<div style="display: inline-block; position: absolute; left: 18%; top: 10%">
+								<center><img src="img/icon/icon-hot.png" class="rounded-circle" width="39"></center>
+							</div>
+							<div style="display: inline-block; padding-left: 24px; margin-left: 25%; margin-top: 3%">
+								<div class="trip-creator-rank-name-sp">Deandra Fihanna Marissi</div>
+								<div class="trip-creator-rank-job-sp">Founder of Ululatrip</div>
+							</div>
+						</div>
+						<div class="col-12" style="margin-top: 40px">
+							<center><a href="#" class="show-all"> Show All ></a></center>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about-us-wrapper" style="padding-top: 64px">
+				<div class="container" style="margin: 0; max-width: 768px">
+					<div class="row">
+						<div class="col-12">
+							<center><span class="about-us">About Us</span></center>
+						</div>
+						<div class="col-12" style="margin-top: 40px">
+							<center><span class="ululatrip" style="font-size: 28px">Ululatrip</span></center>
+						</div>
+						<div class="col-12" style="margin-top: 32px"></div>
+						<div style="width: 11%"></div>
+						<div style="width: 78%">
+							<center>
+								<span class="about-us-desc-sp">
+									You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property as a vacation rental to help defray the costs of ownership. How do you price a vacation home rental without overcharging but making enough to cover your costs? Do your research.
+								</span>
+							</center>
+						</div>
+						<div style="width: 11%"></div>
+						<div class="col-12" style="margin-top: 32px"></div>
+						<div class="col-3">
+							<center>
+								<a href="#"><img src="img/icon/instagram.png" onmouseover="this.src='img/icon/instagram-pink.png'" onmouseout="this.src='img/icon/instagram.png'" width="22">
+								</a>
+							</center>
+						</div>
+						<div class="col-3">
+							<center>
+								<a href="#"><img src="img/icon/facebook.png" onmouseover="this.src='img/icon/facebook-pink.png'" onmouseout="this.src='img/icon/facebook.png'" width="22"></a>
+							</center>
+						</div>
+						<div class="col-3">
+							<center>
+								<a href="#"><img src="img/icon/line.png" onmouseover="this.src='img/icon/line-pink.png'" onmouseout="this.src='img/icon/line.png'" width="22"></a>
+							</center>
+						</div>
+						<div class="col-3">
+							<center>
+								<a href="#"><img src="img/icon/whatsapp.png" onmouseover="this.src='img/icon/whatsapp-pink.png'" onmouseout="this.src='img/icon/whatsapp.png'" width="22"></a>
+							</center>
+						</div>
+						<div class="col-12" style="margin-bottom: 50px"></div>
+					</div>
+				</div>
+			</div>
+			<div class="sign-up-now">
+				<div class="container" style="margin: 0; max-width: 768px;">
+					<div class="row">
+						<div class="col-12" style="padding-top: 56px;">
+							<center><span id="what-are-you-waiting-sp">What Are You Waiting For?</span></center>
+						</div>
+						<div class="col-12" style="padding-top: 40px; padding-bottom: 88px">
+							<center><a href="#" type="button" class="btn sign-up-now-btn" style="width: 250px"><span style="position: absolute; left: 28%; top: 20%">SIGN UP NOW</span></a></center>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container" style="margin: 0; max-width: 768px;">
+					<div class="row">
+						<div class="col-12">
+							<div class="col-12" style="margin-top: 56px">
+								<center><span class="ululatrip-sp" style="font-size: 44px; color: #4A4A4A">Ululatrip</span></center>
+							</div>
+							<div class="col-12" style="margin-top: 24px">
+								<center><a href="#" class="footer-text">About Us</a></center>
+							</div>
+							<div class="col-12" style="margin-top: 16px">
+								<center><a href="#" class="footer-text">Apply Trip Creator</a></center>
+							</div>
+							<div class="col-12" style="margin-top: 16px">
+								<center><a href="#" class="footer-text">Apply Merchant</a></center>
+							</div>
+							<div class="col-12" style="margin-top: 16px">
+								<center><a href="#" class="footer-text">Contact</a></center>
+							</div>
+							<div class="col-12" style="margin-top: 16px">
+								<center><a href="#" class="footer-text">F.A.Q</a></center>
+							</div>
+							<div class="col-12" style="margin-top: 16px">
+								<center><a href="#" class="footer-text">Package</a></center>
+							</div>
+							<div class="col-12" style="margin-top: 56px"></div>
+							<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+								<div style="width: 5%"></div>
+								<div style="width: 30%">
+									<center><a href="#" class="footer-text-2">Privacy Policy</a></center>
+								</div>
+								<div style="width: 30%">
+									<center><a href="#" class="footer-text-2">Sitemap</a></center>
+								</div>
+								<div style="width: 30%">
+									<center><a href="#" class="footer-text-2">© 2018 Ululatrip</a></center>
+								</div>
+								<div style="width: 5%"></div>
+							</div>
+							<div class="col-12" style="margin-top: 36px"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="login-modal">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 625px">
+    <div class="modal-content" style="padding-left: 80px; padding-right: 80px">
+
+      <!-- Modal body -->
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal" style="position: absolute; left: 480px; top: 0px; font-size: 40px">&times;</button><br>
+        <center><span class="login-modal-title">Login</span></center>
+        <form action="#">
+        	<div class="form-group">
+        		<label class="login-modal-label">Email</label>
+        		<input type="email" name="email" class="form-control" placeholder="Traveler@ululatrip.com" required="required">
+        	</div>
+        	<div class="form-group">
+        		<label class="login-modal-label">Password</label>
+        		<input type="password" name="password" class="form-control" placeholder="********" required="required">
+        	</div>
+        	<div class="row" style="margin-bottom: 40px">
+        		<div class="col-6">
+        			<label class="checkbox-baru">Remember Me
+					  <input type="checkbox" checked="checked">
+					  <span class="checkmark"></span>
+					</label>
+        		</div>
+        		<div class="col-6">
+        			<label style="position: absolute; top: -5px; right: 14px">
+        				<a href="#" style="color: #9B9B9B; font-family: 'SF Pro Text'; font-size: 13px; ">Forget Password</a>
+        			</label>
+        		</div>
+        	</div>
+        	<div class="row" style="margin-bottom: 40px">
+        		<div class="col-12">
+        			<center><button class="button-pink" style="margin-top: 0px">LOGIN</button></center>
+        		</div>
+        		<div class="col-12" style="margin-top: 16px"></div>
+        		<div class="col-12">
+        			<center>
+        				<span style="color: #4A4A4A; font-family: 'SF Pro Text'; font-size: 13px;">Don't worry <a href="#" style="color: #FB7378; text-decoration: underline;">SIGN UP</a> is always available HERE :)</span>
+        			</center>
+        		</div>
+        	</div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Signup Mpdal -->
+<div class="modal fade" id="signup-modal">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 625px">
+    <div class="modal-content" style="padding-left: 80px; padding-right: 80px">
+
+      <!-- Modal body -->
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal" style="position: absolute; left: 480px; top: 0px; font-size: 40px">&times;</button><br>
+        <center><span class="login-modal-title">Sign Up</span></center>
+        <form action="#">
+        	<div class="form-group">
+        		<label class="login-modal-label">Full Name</label>
+        		<input type="text" name="full_name" class="form-control" placeholder="Ulula Trip" required="required">
+        	</div>
+        	<div class="form-group">
+        		<label class="login-modal-label">Email</label>
+        		<input type="email" name="email" class="form-control" placeholder="Traveler@ululatrip.com" required="required">
+        	</div>
+        	<div class="form-group">
+        		<label class="login-modal-label">Password</label>
+        		<input type="password" name="password" class="form-control" placeholder="********" required="required">
+        	</div>
+        	<div class="row" style="margin-bottom: 40px">
+        		<div class="col-12">
+        			<label class="checkbox-baru">I agree with the terms & conditions. <a href="#" style="color: #FD7575">Read</a>
+					  <input type="checkbox" checked="checked">
+					  <span class="checkmark"></span>
+					</label>
+        		</div>
+        	</div>
+        	<div class="row" style="margin-bottom: 40px">
+        		<div class="col-12">
+        			<center><button class="button-pink" style="margin-top: 0px">SIGN UP</button></center>
+        		</div>
+        		<div class="col-12" style="margin-top: 16px"></div>
+        		<div class="col-12">
+        			<center>
+        				<span style="color: #4A4A4A; font-family: 'SF Pro Text'; font-size: 13px;">Already have account? <a href="#" style="color: #FB7378;">Login</a></span>
+        			</center>
+        		</div>
+        	</div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

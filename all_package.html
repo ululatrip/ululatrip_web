@@ -1,0 +1,2857 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ululatrip</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="style/css.css">
+
+  	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  	<style type="text/css">
+  		@font-face {
+		    font-family: Eina03-Regular;
+		    src: url(font/eina-03-regular.woff) format('woff');
+		}
+
+		@font-face {
+		    font-family: Astronout;
+		    src: url(font/Astronout.ttf) format('truetype');
+		}
+
+		@font-face {
+		    font-family: Eina03-SemiBold;
+		    src: url(font/eina-03-semibold.woff) format('woff');
+		    font-weight: 300;
+		}
+
+		@font-face {
+		    font-family: SF Pro Display;
+		    src: url(font/SF-Pro-Display-Regular.otf) format('opentype');
+		}
+
+		@font-face {
+		    font-family: SF Pro Text;
+		    src: url(font/SF-Pro-Text-Regular.otf) format('opentype');
+		}
+
+		body {
+		    font-family: Eina03-Regular;
+		}
+  	</style>
+</head>
+<body>
+<div class="d-none d-lg-block">
+	<div class="d-none d-lg-block">
+		<div class="container" style="margin: 0; max-width: 1920px; padding: 0">
+			<header class="all-package-header">
+				<div class="row">
+					<div class="col-9">
+						<ul class="nav">
+							<li><a href="#" class="ululatrip" style="padding: 0px; margin-right: 42px">Ululatrip</a></li>
+							<li>
+								<form action="#">
+									<input id="icon" style="text-indent: 17px; padding-left: 32px" type="text" name="search" class="search-package" placeholder='Try "Labuan Bajo", "Trekking", "Your Fav Trip Creator"'>
+								</form>
+							</li>
+						</ul>
+					</div>
+					<div class="col-3">
+						<ul class="nav" style="float: right;">
+							<li><a href="#" class="navbar" style="margin-right: 58px; padding: 0px; color: #4A4A4A" data-toggle="modal" data-target="#login-modal">Sign In</a></li>
+							<li><a href="#" class="signup-text" data-toggle="modal" data-target="#signup-modal">SIGN UP</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<div class="line-3"></div>
+			<ul class="nav nav-pills" style="margin-top: 56px; margin-left: 32px">
+			    <li style="width: 205px; margin-bottom: 24px; padding-bottom: 8px" class="trip-package"><a data-toggle="pill" href="#trip-package" class="tab-title">Trip Package</a></li>
+			    <li style="width: 205px; margin-bottom: 24px; padding-bottom: 8px" class="trip-creator"><a data-toggle="pill" href="#trip-creator" class="tab-title">Trip Creator</a></li>
+		  	</ul>
+		  	<div class="tab-content">
+		  		<div style="margin: 0; max-width: 1920px; padding: 0; margin-left: 32px; margin-right: 32px">
+		  			<div class="row" style="margin-bottom: 48px">
+				      	<div class="col-9">
+				      		<ul class="nav">
+						      	<li><button class="package-btn" style="width: 96px"><a href="#" class="package-btn-text">Activity &nbsp;<img src="img/icon/minimize-state-medium-grey.png" width="10" id="state"></a></button></li>
+						      	<li><button class="package-btn" style="width: 68px"><a href="#" class="package-btn-text">Dates</a></button></li>
+						      	<li><button class="package-btn" style="width: 63px"><a href="#" class="package-btn-text">Price</a></button></li>
+						      	<li><button class="package-btn" style="width: 87px"><a href="#" class="package-btn-text">Traveler</a></button></li>
+				      		</ul>
+				      	</div>
+				      	<div class="col-3">
+				      		<ul class="nav" style="float: right;">
+				      			<li><button class="package-btn" style="width: 207px; margin-right: 0px"><a href="#" class="package-btn-text" style="float: left; padding-left: 8px">Sorting &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/icon/minimize-state-medium-grey.png" width="10" id="state"></a></button></li>
+				      		</ul>
+				      	</div>
+				    </div>
+		  		</div>
+		  		<div id="trip-package" class="tab-pane active">
+		  			<div style="margin-right: 32px; margin-left: 32px">
+		  				<div class="row">
+		  					<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-1" class="carousel slide" data-ride="carousel">
+
+										<!-- Indicators -->
+									  	<ul class="carousel-indicators">
+									    	<li data-target="#hot-1" data-slide-to="0" class="active"></li>
+									    	<li data-target="#hot-1" data-slide-to="1"></li>
+									    	<li data-target="#hot-1" data-slide-to="2"></li>
+									  	</ul>
+								  
+							  			<!-- The slideshow -->
+									  	<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+									  	</div>
+						  
+									  	<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-1" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+									  	<a class="carousel-control-next" href="#hot-1" data-slide="next">
+									    	<span class="carousel-control-next-icon"></span>
+									  	</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>		
+								</li>
+							</div>
+							<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-2" class="carousel slide" data-ride="carousel">
+
+									  	<!-- Indicators -->
+									  	<ul class="carousel-indicators">
+									    	<li data-target="#hot-2" data-slide-to="0" class="active"></li>
+									    	<li data-target="#hot-2" data-slide-to="1"></li>
+									    	<li data-target="#hot-2" data-slide-to="2"></li>
+									  	</ul>
+								  
+							  			<!-- The slideshow -->
+							  			<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+							  			</div>
+							  
+									  	<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-2" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+									  	<a class="carousel-control-next" href="#hot-2" data-slide="next">
+									    	<span class="carousel-control-next-icon"></span>
+									  	</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>
+								</li>
+							</div>
+							<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-3" class="carousel slide" data-ride="carousel">
+
+								  		<!-- Indicators -->
+								  		<ul class="carousel-indicators">
+								    		<li data-target="#hot-3" data-slide-to="0" class="active"></li>
+								    		<li data-target="#hot-3" data-slide-to="1"></li>
+								    		<li data-target="#hot-3" data-slide-to="2"></li>
+								  		</ul>
+							  
+						  				<!-- The slideshow -->
+						  				<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+						  				</div>
+						  
+						  				<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-3" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+						  				<a class="carousel-control-next" href="#hot-3" data-slide="next">
+						    				<span class="carousel-control-next-icon"></span>
+						  				</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>
+								</li>
+							</div>
+							<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-4" class="carousel slide" data-ride="carousel">
+
+								  		<!-- Indicators -->
+								  		<ul class="carousel-indicators">
+								    		<li data-target="#hot-4" data-slide-to="0" class="active"></li>
+										    <li data-target="#hot-4" data-slide-to="1"></li>
+										    <li data-target="#hot-4" data-slide-to="2"></li>
+										</ul>
+							  
+						  				<!-- The slideshow -->
+									  	<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+									  	</div>
+						  
+						  				<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-4" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+									  	<a class="carousel-control-next" href="#hot-4" data-slide="next">
+									    	<span class="carousel-control-next-icon"></span>
+									  	</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>
+								</li>
+							</div>
+		  				</div>
+		  				<div class="row" style="margin-top: 40px">
+		  					<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-1" class="carousel slide" data-ride="carousel">
+
+										<!-- Indicators -->
+									  	<ul class="carousel-indicators">
+									    	<li data-target="#hot-1" data-slide-to="0" class="active"></li>
+									    	<li data-target="#hot-1" data-slide-to="1"></li>
+									    	<li data-target="#hot-1" data-slide-to="2"></li>
+									  	</ul>
+								  
+							  			<!-- The slideshow -->
+									  	<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+									  	</div>
+						  
+									  	<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-1" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+									  	<a class="carousel-control-next" href="#hot-1" data-slide="next">
+									    	<span class="carousel-control-next-icon"></span>
+									  	</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>		
+								</li>
+							</div>
+							<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-2" class="carousel slide" data-ride="carousel">
+
+									  	<!-- Indicators -->
+									  	<ul class="carousel-indicators">
+									    	<li data-target="#hot-2" data-slide-to="0" class="active"></li>
+									    	<li data-target="#hot-2" data-slide-to="1"></li>
+									    	<li data-target="#hot-2" data-slide-to="2"></li>
+									  	</ul>
+								  
+							  			<!-- The slideshow -->
+							  			<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+							  			</div>
+							  
+									  	<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-2" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+									  	<a class="carousel-control-next" href="#hot-2" data-slide="next">
+									    	<span class="carousel-control-next-icon"></span>
+									  	</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>
+								</li>
+							</div>
+							<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-3" class="carousel slide" data-ride="carousel">
+
+								  		<!-- Indicators -->
+								  		<ul class="carousel-indicators">
+								    		<li data-target="#hot-3" data-slide-to="0" class="active"></li>
+								    		<li data-target="#hot-3" data-slide-to="1"></li>
+								    		<li data-target="#hot-3" data-slide-to="2"></li>
+								  		</ul>
+							  
+						  				<!-- The slideshow -->
+						  				<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+						  				</div>
+						  
+						  				<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-3" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+						  				<a class="carousel-control-next" href="#hot-3" data-slide="next">
+						    				<span class="carousel-control-next-icon"></span>
+						  				</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>
+								</li>
+							</div>
+							<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-4" class="carousel slide" data-ride="carousel">
+
+								  		<!-- Indicators -->
+								  		<ul class="carousel-indicators">
+								    		<li data-target="#hot-4" data-slide-to="0" class="active"></li>
+										    <li data-target="#hot-4" data-slide-to="1"></li>
+										    <li data-target="#hot-4" data-slide-to="2"></li>
+										</ul>
+							  
+						  				<!-- The slideshow -->
+									  	<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+									  	</div>
+						  
+						  				<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-4" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+									  	<a class="carousel-control-next" href="#hot-4" data-slide="next">
+									    	<span class="carousel-control-next-icon"></span>
+									  	</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>
+								</li>
+							</div>
+		  				</div>
+		  				<div class="row" style="margin-top: 40px">
+		  					<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-1" class="carousel slide" data-ride="carousel">
+
+										<!-- Indicators -->
+									  	<ul class="carousel-indicators">
+									    	<li data-target="#hot-1" data-slide-to="0" class="active"></li>
+									    	<li data-target="#hot-1" data-slide-to="1"></li>
+									    	<li data-target="#hot-1" data-slide-to="2"></li>
+									  	</ul>
+								  
+							  			<!-- The slideshow -->
+									  	<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+									  	</div>
+						  
+									  	<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-1" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+									  	<a class="carousel-control-next" href="#hot-1" data-slide="next">
+									    	<span class="carousel-control-next-icon"></span>
+									  	</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>		
+								</li>
+							</div>
+							<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-2" class="carousel slide" data-ride="carousel">
+
+									  	<!-- Indicators -->
+									  	<ul class="carousel-indicators">
+									    	<li data-target="#hot-2" data-slide-to="0" class="active"></li>
+									    	<li data-target="#hot-2" data-slide-to="1"></li>
+									    	<li data-target="#hot-2" data-slide-to="2"></li>
+									  	</ul>
+								  
+							  			<!-- The slideshow -->
+							  			<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+							  			</div>
+							  
+									  	<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-2" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+									  	<a class="carousel-control-next" href="#hot-2" data-slide="next">
+									    	<span class="carousel-control-next-icon"></span>
+									  	</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>
+								</li>
+							</div>
+							<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-3" class="carousel slide" data-ride="carousel">
+
+								  		<!-- Indicators -->
+								  		<ul class="carousel-indicators">
+								    		<li data-target="#hot-3" data-slide-to="0" class="active"></li>
+								    		<li data-target="#hot-3" data-slide-to="1"></li>
+								    		<li data-target="#hot-3" data-slide-to="2"></li>
+								  		</ul>
+							  
+						  				<!-- The slideshow -->
+						  				<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+						  				</div>
+						  
+						  				<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-3" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+						  				<a class="carousel-control-next" href="#hot-3" data-slide="next">
+						    				<span class="carousel-control-next-icon"></span>
+						  				</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>
+								</li>
+							</div>
+							<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-4" class="carousel slide" data-ride="carousel">
+
+								  		<!-- Indicators -->
+								  		<ul class="carousel-indicators">
+								    		<li data-target="#hot-4" data-slide-to="0" class="active"></li>
+										    <li data-target="#hot-4" data-slide-to="1"></li>
+										    <li data-target="#hot-4" data-slide-to="2"></li>
+										</ul>
+							  
+						  				<!-- The slideshow -->
+									  	<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+									  	</div>
+						  
+						  				<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-4" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+									  	<a class="carousel-control-next" href="#hot-4" data-slide="next">
+									    	<span class="carousel-control-next-icon"></span>
+									  	</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>
+								</li>
+							</div>
+		  				</div>
+		  				<div class="row" style="margin-top: 40px">
+		  					<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-1" class="carousel slide" data-ride="carousel">
+
+										<!-- Indicators -->
+									  	<ul class="carousel-indicators">
+									    	<li data-target="#hot-1" data-slide-to="0" class="active"></li>
+									    	<li data-target="#hot-1" data-slide-to="1"></li>
+									    	<li data-target="#hot-1" data-slide-to="2"></li>
+									  	</ul>
+								  
+							  			<!-- The slideshow -->
+									  	<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+									  	</div>
+						  
+									  	<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-1" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+									  	<a class="carousel-control-next" href="#hot-1" data-slide="next">
+									    	<span class="carousel-control-next-icon"></span>
+									  	</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>		
+								</li>
+							</div>
+							<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-2" class="carousel slide" data-ride="carousel">
+
+									  	<!-- Indicators -->
+									  	<ul class="carousel-indicators">
+									    	<li data-target="#hot-2" data-slide-to="0" class="active"></li>
+									    	<li data-target="#hot-2" data-slide-to="1"></li>
+									    	<li data-target="#hot-2" data-slide-to="2"></li>
+									  	</ul>
+								  
+							  			<!-- The slideshow -->
+							  			<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+							  			</div>
+							  
+									  	<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-2" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+									  	<a class="carousel-control-next" href="#hot-2" data-slide="next">
+									    	<span class="carousel-control-next-icon"></span>
+									  	</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>
+								</li>
+							</div>
+							<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-3" class="carousel slide" data-ride="carousel">
+
+								  		<!-- Indicators -->
+								  		<ul class="carousel-indicators">
+								    		<li data-target="#hot-3" data-slide-to="0" class="active"></li>
+								    		<li data-target="#hot-3" data-slide-to="1"></li>
+								    		<li data-target="#hot-3" data-slide-to="2"></li>
+								  		</ul>
+							  
+						  				<!-- The slideshow -->
+						  				<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+						  				</div>
+						  
+						  				<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-3" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+						  				<a class="carousel-control-next" href="#hot-3" data-slide="next">
+						    				<span class="carousel-control-next-icon"></span>
+						  				</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>
+								</li>
+							</div>
+							<div class="col-3">
+								<li class="dropdown-package">
+									<div id="hot-4" class="carousel slide" data-ride="carousel">
+
+								  		<!-- Indicators -->
+								  		<ul class="carousel-indicators">
+								    		<li data-target="#hot-4" data-slide-to="0" class="active"></li>
+										    <li data-target="#hot-4" data-slide-to="1"></li>
+										    <li data-target="#hot-4" data-slide-to="2"></li>
+										</ul>
+							  
+						  				<!-- The slideshow -->
+									  	<div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="img/camping.png" class="img-fluid">
+										    </div>
+									  	</div>
+						  
+						  				<!-- Left and right controls -->
+									  	<a class="carousel-control-prev" href="#hot-4" data-slide="prev">
+									    	<span class="carousel-control-prev-icon"></span>
+									  	</a>
+									  	<a class="carousel-control-next" href="#hot-4" data-slide="next">
+									    	<span class="carousel-control-next-icon"></span>
+									  	</a>
+									</div>
+									<div class="hot-subtitle">Aktifitas</div>
+									<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+									<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+									<div style="margin-top: 16px; padding-bottom: 8px">
+										<img src="img/icon/pin-point.png" width="16" height="16">
+										<span class="lokasi">Lokasi</span><br>
+										<img src="img/icon/time.png" width="16" height="16">
+										<span class="lokasi">Durasi</span>
+										<div class="harga">Rp2.700.000 per orang</div>
+									</div>
+								</li>
+							</div>
+		  				</div>
+		  				<div class="row" style="margin-top: 40px">
+					      	<div class="col-12">
+					      		<center>
+					      			<div class="page">
+									  <a href="#" class="active">1</a>
+									  <a href="#">2</a>
+									  <a href="#">3</a>
+									  <a href="#">4</a>
+									  <a href="#">5</a>
+									  <a href="#">6</a>
+									  <a href="#"><img src="img/icon/chevron-right.png" width="12"></a>
+									</div>
+					      		</center>
+					      	</div>
+					    </div>
+		  			</div>
+		  		</div>
+		  		<div id="trip-creator" class="tab-pane">
+		  			<div style="margin-right: 32px; margin-left: 32px">
+		  				<div class="row" style="margin-bottom: 36px">
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  				</div>
+		  				<div class="row" style="margin-bottom: 36px">
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  				</div>
+		  				<div class="row" style="margin-bottom: 36px">
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  				</div>
+		  				<div class="row" style="margin-bottom: 48px">
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  					<div class="col-3">
+		  						<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      		<div class="hot-subtitle">#1 Rank</div>
+								<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+								<div class="destination" style="margin-top: 0.5px">Occupation</div>
+								<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Jakarta</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">22 Years Old</span>
+								</div>
+		  					</div>
+		  				</div>
+		  				<div class="row" style="margin-top: 48px">
+					      	<div class="col-12">
+					      		<center>
+					      			<div class="page">
+									  <a href="#" class="active">1</a>
+									  <a href="#">2</a>
+									  <a href="#">3</a>
+									  <a href="#">4</a>
+									  <a href="#">5</a>
+									  <a href="#">6</a>
+									  <a href="#"><img src="img/icon/chevron-right.png" width="12"></a>
+									</div>
+					      		</center>
+					      	</div>
+					    </div>
+		  			</div>
+		  		</div>
+		  	</div>
+		  	<div style="box-sizing: border-box; height: 2px; width: 100%; border: 1px solid #D4D4D4; box-shadow: 0 2px 4px 0 #D4D4D4; margin-top: 88px; margin-bottom: 56px;"></div>
+		  	<div class="about-us-wrapper" style="padding-top: 0px; background-color: #FFFFFF">
+				<div class="container" style="margin: 0; max-width: 1920px">
+					<div class="row">
+						<div class="col-12">
+							<center><span class="about-us">About Us</span></center>
+						</div>
+						<div class="col-12" style="margin-top: 40px"></div>
+						<div class="col-12">
+							<center><span class="ululatrip" style="font-size: 28px">Ululatrip</span></center>
+						</div>
+						<div class="col-12" style="margin-top: 32px"></div>
+						<div style="width: 15%"></div>
+						<div style="width: 70%">
+							<center>
+								<span class="about-us-desc">
+									You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property as a vacation rental to help defray the costs of ownership. How do you price a vacation home rental without overcharging but making enough to cover your costs? Do your research.
+								</span>
+							</center>
+						</div>
+						<div style="width: 15%"></div>
+						<div class="col-12" style="margin-top: 32px"></div>
+						<div class="col-4"></div>
+						<div class="col-4">
+							<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+							<div class="col-3">
+								<center><a href="#">
+									<img src="img/icon/instagram.png" onmouseover="this.src='img/icon/instagram-pink.png'" onmouseout="this.src='img/icon/instagram.png'">
+								</a></center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/facebook.png" onmouseover="this.src='img/icon/facebook-pink.png'" onmouseout="this.src='img/icon/facebook.png'"></a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/line.png" onmouseover="this.src='img/icon/line-pink.png'" onmouseout="this.src='img/icon/line.png'"></a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/whatsapp.png" onmouseover="this.src='img/icon/whatsapp-pink.png'" onmouseout="this.src='img/icon/whatsapp.png'"></a>
+								</center>
+							</div>
+						</div>
+						</div>
+						<div class="col-4"></div>
+						<div class="col-12" style="margin-bottom: 80px"></div>
+					</div>
+				</div>
+			</div>
+			<div class="sign-up-now">
+				<div class="container" style="margin: 0; max-width: 1920px;">
+					<div class="row">
+						<div class="col-12" style="padding-top: 56px;"></div>
+						<div class="col-12">
+							<center><span id="what-are-you-waiting">What Are You Waiting For?</span></center>
+						</div>
+						<div class="col-12" style="padding-top: 40px;"></div>
+						<div class="col-12">
+							<center><a href="#" type="button" class="btn sign-up-now-btn"><span style="position: absolute; left: 34%; top: 20%">SIGN UP NOW</span></a></center>
+						</div>
+						<div class="col-12" style="padding-bottom: 56px;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer" style="background-color: #FFFFFF">
+				<div class="container" style="margin: 0; max-width: 1920px;">
+					<div class="row">
+						<div class="col-12" style="padding-top: 56px"></div>
+						<div class="col-12">
+							<center><span class="ululatrip" style="font-size: 44px; color: #4A4A4A">Ululatrip</span></center>
+						</div>
+						<div class="col-12" style="padding-top: 24px"></div>
+						<div class="col-1"></div>
+						<div class="col-10">
+							<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+								<div class="col-2">
+									<center><a href="#" class="footer-text">About Us</a></center>
+								</div>
+								<div class="col-2">
+									<center><a href="#" class="footer-text">Apply Trip Creator</a></center>
+								</div>
+								<div class="col-2">
+									<center><a href="#" class="footer-text">Apply Merchant</a></center>
+								</div>
+								<div class="col-2">
+									<center><a href="#" class="footer-text">Contact</a></center>
+								</div>
+								<div class="col-2">
+									<center><a href="#" class="footer-text">F.A.Q</a></center>
+								</div>
+								<div class="col-2">
+									<center><a href="#" class="footer-text">Package</a></center>
+								</div>
+							</div>
+						</div>
+						<div class="col-1"></div>
+						<div class="col-12" style="margin-top: 8px"></div>
+						<div class="col-3"></div>
+						<div class="col-6">
+							<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+								<div class="col-4">
+									<center><a href="#" class="footer-text-2">Privacy Policy</a></center>
+								</div>
+								<div class="col-4">
+									<center><a href="#" class="footer-text-2">Site Map</a></center>
+								</div>
+								<div class="col-4">
+									<center><a href="#" class="footer-text-2">© 2018 Ululatrip</a></center>
+								</div>
+							</div>
+						</div>
+						<div class="col-3"></div>
+						<div class="col-12" style="margin-top: 40px"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="d-none d-sm-block d-lg-none">
+	<div class="container" style="margin: 0; max-width: 1024px; padding: 0">
+		<header class="all-package-header">
+			<div class="row">
+				<div class="col-9">
+					<ul class="nav">
+						<li><a href="#" class="ululatrip" style="padding: 0px; margin-right: 21px">Ululatrip</a></li>
+						<li>
+							<form action="#">
+								<input id="icon" style="text-indent: 17px; padding-left: 32px" type="text" name="search" class="search-package-tablet" placeholder='Try "Labuan Bajo", "Trekking"'>
+							</form>
+						</li>
+					</ul>
+				</div>
+				<div class="col-3" style="padding: 0">
+					<ul class="nav">
+						<li><a href="#" class="navbar" style="margin-right: 24px; padding: 0px; color: #4A4A4A" data-toggle="modal" data-target="#login-modal">Sign In</a></li>
+						<li><a href="#" class="signup-text">SIGN UP</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="line-3"></div>
+		<ul class="nav nav-pills" style="margin-top: 56px; margin-left: 48px">
+		    <li style="width: 205px; margin-bottom: 24px; padding-bottom: 8px" class="trip-package-tablet"><a data-toggle="pill" href="#trip-package-tablet" class="tab-title">Trip Package</a></li>
+		    <li style="width: 205px; margin-bottom: 24px; padding-bottom: 8px" class="trip-creator-tablet"><a data-toggle="pill" href="#trip-creator-tablet" class="tab-title">Trip Creator</a></li>
+		 </ul>
+		 <div class="tab-content">
+		 	<div style="margin: 0; max-width: 1024px; padding: 0; margin-left: 48px; margin-right: 48px">
+		 		<div class="row" style="margin-bottom: 48px">
+		 			<div class="col-9">
+		 				<ul class="nav">
+		 					<li><button class="package-btn" style="width: 96px"><a href="#" class="package-btn-text">Activity &nbsp;<img src="img/icon/minimize-state-medium-grey.png" width="10" id="state"></a></button></li>
+						    <li><button class="package-btn" style="width: 68px"><a href="#" class="package-btn-text">Dates</a></button></li>
+						    <li><button class="package-btn" style="width: 63px"><a href="#" class="package-btn-text">Price</a></button></li>
+						    <li><button class="package-btn" style="width: 87px"><a href="#" class="package-btn-text">Traveler</a></button></li>
+		 				</ul>
+		 			</div>
+		 			<div class="col-3">
+		 				<ul class="nav" style="float: right;">
+				      		<li><button class="package-btn" style="width: 207px; margin-right: 0px"><a href="#" class="package-btn-text" style="float: left; padding-left: 8px">Sorting &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/icon/minimize-state-medium-grey.png" width="10" id="state"></a></button></li>
+				      	</ul>
+		 			</div>
+		 		</div>
+		 	</div>
+		 	<div id="trip-package-tablet" class="tab-pane active">
+		 		<div style="margin-right: 48px; margin-left: 48px">
+		 			<div class="row">
+		 				<div class="col-4">
+		 					<li class="dropdown-package">
+		 						<div id="hot-1-tab" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-tab" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+		 					</li>
+		 				</div>
+		 				<div class="col-4">
+		 					<li class="dropdown-package">
+		 						<div id="hot-1-tab" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-tab" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+		 					</li>
+		 				</div>
+		 				<div class="col-4">
+		 					<li class="dropdown-package">
+		 						<div id="hot-1-tab" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-tab" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+		 					</li>
+		 				</div>
+		 			</div>
+		 			<div class="row" style="margin-top: 40px">
+		 				<div class="col-4">
+		 					<li class="dropdown-package">
+		 						<div id="hot-1-tab" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-tab" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+		 					</li>
+		 				</div>
+		 				<div class="col-4">
+		 					<li class="dropdown-package">
+		 						<div id="hot-1-tab" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-tab" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+		 					</li>
+		 				</div>
+		 				<div class="col-4">
+		 					<li class="dropdown-package">
+		 						<div id="hot-1-tab" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-tab" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+		 					</li>
+		 				</div>
+		 			</div>
+		 			<div class="row" style="margin-top: 40px">
+		 				<div class="col-4">
+		 					<li class="dropdown-package">
+		 						<div id="hot-1-tab" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-tab" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+		 					</li>
+		 				</div>
+		 				<div class="col-4">
+		 					<li class="dropdown-package">
+		 						<div id="hot-1-tab" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-tab" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+		 					</li>
+		 				</div>
+		 				<div class="col-4">
+		 					<li class="dropdown-package">
+		 						<div id="hot-1-tab" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-tab" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+		 					</li>
+		 				</div>
+		 			</div>
+		 			<div class="row" style="margin-top: 40px">
+		 				<div class="col-4">
+		 					<li class="dropdown-package">
+		 						<div id="hot-1-tab" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-tab" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+		 					</li>
+		 				</div>
+		 				<div class="col-4">
+		 					<li class="dropdown-package">
+		 						<div id="hot-1-tab" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-tab" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+		 					</li>
+		 				</div>
+		 				<div class="col-4">
+		 					<li class="dropdown-package">
+		 						<div id="hot-1-tab" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-tab" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-tab" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+		 					</li>
+		 				</div>
+		 			</div>
+		 			<div class="row" style="margin-top: 40px">
+					   	<div class="col-12">
+					   		<center>
+					   			<div class="page">
+								  <a href="#" class="active">1</a>
+								  <a href="#">2</a>
+								  <a href="#">3</a>
+								  <a href="#">4</a>
+								  <a href="#">5</a>
+								  <a href="#"><img src="img/icon/chevron-right.png" width="12"></a>
+								</div>
+					   		</center>
+					   	</div>
+					</div>
+		 		</div>
+		 	</div>
+		 	<div id="trip-creator-tablet" class="tab-pane">
+		 		<div style="margin-right: 48px; margin-left: 48px">
+		 			<div class="row" style="margin-bottom: 48px">
+		 				<div class="col-4">
+		 					<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+		 				</div>
+		 				<div class="col-4">
+		 					<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+		 				</div>
+		 				<div class="col-4">
+		 					<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+		 				</div>
+		 			</div>
+		 			<div class="row" style="margin-bottom: 48px">
+		 				<div class="col-4">
+		 					<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+		 				</div>
+		 				<div class="col-4">
+		 					<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+		 				</div>
+		 				<div class="col-4">
+		 					<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+		 				</div>
+		 			</div>
+		 			<div class="row" style="margin-bottom: 48px">
+		 				<div class="col-4">
+		 					<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+		 				</div>
+		 				<div class="col-4">
+		 					<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+		 				</div>
+		 				<div class="col-4">
+		 					<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+		 				</div>
+		 			</div>
+		 			<div class="row" style="margin-bottom: 40px">
+		 				<div class="col-4">
+		 					<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+		 				</div>
+		 				<div class="col-4">
+		 					<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+		 				</div>
+		 				<div class="col-4">
+		 					<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+		 				</div>
+		 			</div>
+		 			<div class="row">
+					   	<div class="col-12">
+					   		<center>
+					   			<div class="page">
+								  <a href="#" class="active">1</a>
+								  <a href="#">2</a>
+								  <a href="#">3</a>
+								  <a href="#">4</a>
+								  <a href="#">5</a>
+								  <a href="#"><img src="img/icon/chevron-right.png" width="12"></a>
+								</div>
+					   		</center>
+					   	</div>
+					</div>
+		 		</div>
+		 	</div>
+		</div>
+		<div style="box-sizing: border-box; height: 2px; width: 100%; border: 1px solid #D4D4D4; box-shadow: 0 2px 4px 0 #D4D4D4; margin-top: 88px; margin-bottom: 56px;"></div>
+		<div class="about-us-wrapper" style="padding-top: 0px; background-color: #FFFFFF">
+			<div class="container" style="margin: 0; max-width: 1024px">
+				<div class="row">
+					<div class="col-12">
+						<center><span class="about-us">About Us</span></center>
+					</div>
+					<div class="col-12" style="margin-top: 32px">
+						<center><span class="ululatrip">Ululatrip</span></center>
+					</div>
+					<div class="col-12" style="margin-top: 24px"></div>
+					<div style="width: 7%"></div>
+					<div style="width: 86%">
+						<center>
+							<span class="about-us-desc-tablet" style="color: #9B9B9B;">
+								You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property as a vacation rental to help defray the costs of ownership. How do you price a vacation home rental without overcharging but making enough to cover your costs? Do your research.
+							</span>
+						</center>
+					</div>
+					<div style="width: 7%"></div>
+					<div class="col-12" style="margin-top: 40px"></div>
+					<div class="col-3"></div>
+					<div class="col-6">
+						<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/instagram.png" onmouseover="this.src='img/icon/instagram-pink.png'" onmouseout="this.src='img/icon/instagram.png'" width="26">
+									</a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/facebook.png" onmouseover="this.src='img/icon/facebook-pink.png'" onmouseout="this.src='img/icon/facebook.png'" width="26"></a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/line.png" onmouseover="this.src='img/icon/line-pink.png'" onmouseout="this.src='img/icon/line.png'" width="26"></a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/whatsapp.png" onmouseover="this.src='img/icon/whatsapp-pink.png'" onmouseout="this.src='img/icon/whatsapp.png'" width="26"></a>
+								</center>
+							</div>
+						</div>
+					</div>
+					<div class="col-3"></div>
+					<div class="col-12" style="margin-bottom: 88px"></div>
+				</div>
+			</div>
+		</div>
+		<div class="sign-up-now">
+			<div class="container" style="margin: 0; max-width: 1024px">
+				<div class="row">
+					<div class="col-12" style="padding-top: 50px;">
+						<center><span id="what-are-you-waiting">What Are You Waiting For?</span></center>
+					</div>
+					<div class="col-12" style="margin-top: 50px">
+						<center><a href="#" type="button" class="btn sign-up-now-btn"><span style="position: absolute; left: 34%; top: 20%">SIGN UP NOW</span></a></center>
+					</div>
+					<div class="col-12" style="padding-bottom: 50px;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container" style="margin: 0; max-width: 1024px;">
+				<div class="row">
+					<div class="col-12" style="padding-top: 56px"></div>
+					<div class="col-12">
+						<center><span class="ululatrip" style="color: #4A4A4A">Ululatrip</span></center>
+					</div>
+					<div class="col-12" style="padding-top: 24px"></div>
+					<div class="col-12">
+						<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+							<div style="width: 15%">
+								<center><a href="#" class="footer-text">About Us</a></center>
+							</div>
+							<div style="width: 20%">
+								<center><a href="#" class="footer-text">Apply Trip Creator</a></center>
+							</div>
+							<div style="width: 20%">
+								<center><a href="#" class="footer-text">Apply Merchant</a></center>
+							</div>
+							<div style="width: 15%">
+								<center><a href="#" class="footer-text">Contact</a></center>
+							</div>
+							<div style="width: 15%">
+								<center><a href="#" class="footer-text">F.A.Q</a></center>
+							</div>
+							<div style="width: 15%">
+								<center><a href="#" class="footer-text">Package</a></center>
+							</div>
+						</div>
+					</div>
+					<div class="col-12" style="margin-top: 8px"></div>
+					<div class="col-3"></div>
+					<div class="col-6">
+						<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+							<div class="col-4">
+								<center><a href="#" class="footer-text-2">Privacy Policy</a></center>
+							</div>
+							<div class="col-4">
+								<center><a href="#" class="footer-text-2">Site Map</a></center>
+							</div>
+							<div class="col-4">
+								<center><a href="#" class="footer-text-2">© 2018 Ululatrip</a></center>
+							</div>
+						</div>
+					</div>
+					<div class="col-3"></div>
+					<div class="col-12" style="margin-top: 88px"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="d-sm-none">
+	<div class="container" style="margin: 0; max-width: 768px; padding: 0">
+		<header class="all-package-header-sp">
+			<div class="row">
+				<div class="col-12">
+					<ul class="nav">
+						<li><a href="#" class="ululatrip" style="padding: 0px; margin-right: 8px">Ululatrip</a></li>
+						<li>
+							<form action="#">
+								<input id="icon-sp" style="text-indent: 17px; padding-left: 24px" type="text" name="search" class="search-package-sp" placeholder='Try "Labuan Bajo"'>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="line-3"></div>
+		<ul class="nav nav-pills" style="margin-top: 32px; margin-left: 16px; margin-right: 16px">
+		    <li style="width: 48%; margin-bottom: 24px; padding-bottom: 8px; margin-right: 8px" class="trip-package-sp"><a data-toggle="pill" href="#trip-package-sp" class="tab-title-sp">Trip Package</a></li>
+		    <li style="width: 48%; margin-bottom: 24px; padding-bottom: 8px" class="trip-creator-sp"><a data-toggle="pill" href="#trip-creator-sp" class="tab-title-sp">Trip Creator</a></li>
+		</ul>
+		<div class="tab-content">
+			<div style="margin: 0; max-width: 768px; padding: 0; margin-left: 16px; margin-right: 16px;">
+				<div class="row" style="margin-bottom: 40px; margin-left: 0px; margin-right: 0px;">
+					<div class="col-6" style="margin: 0; padding: 0; padding-right: 4px">
+						<button class="package-btn btn-block"><a href="#" class="package-btn-text">Filter</a></button>
+					</div>
+					<div class="col-6" style="margin: 0; padding: 0; padding-left: 4px">
+						<button class="package-btn btn-block"><a href="#" class="package-btn-text">Sorting</a></button>
+					</div>
+				</div>
+			</div>
+			<div id="trip-package-sp" class="tab-pane active">
+				<div style="margin-right: 40px; margin-left: 40px">
+					<div class="row">
+						<div class="col-12">
+							<li class="dropdown-package">
+								<div id="hot-1-sp" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-sp" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-sp" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-sp" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+							</li>
+						</div>
+						<div class="col-12" style="margin-top: 40px">
+							<li class="dropdown-package">
+								<div id="hot-1-sp" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-sp" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-sp" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-sp" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+							</li>
+						</div>
+						<div class="col-12" style="margin-top: 40px">
+							<li class="dropdown-package">
+								<div id="hot-1-sp" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-sp" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-sp" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-sp" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+							</li>
+						</div>
+						<div class="col-12" style="margin-top: 40px">
+							<li class="dropdown-package">
+								<div id="hot-1-sp" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-sp" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-sp" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-sp" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+							</li>
+						</div>
+						<div class="col-12" style="margin-top: 40px">
+							<li class="dropdown-package">
+								<div id="hot-1-sp" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-sp" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-sp" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-sp" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+							</li>
+						</div>
+						<div class="col-12" style="margin-top: 40px">
+							<li class="dropdown-package">
+								<div id="hot-1-sp" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-sp" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-sp" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-sp" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+							</li>
+						</div>
+						<div class="col-12" style="margin-top: 40px">
+							<li class="dropdown-package">
+								<div id="hot-1-sp" class="carousel slide" data-ride="carousel">
+		 							<!-- Indicators -->
+									<ul class="carousel-indicators">
+									   	<li data-target="#hot-1-sp" data-slide-to="0" class="active"></li>
+									   	<li data-target="#hot-1-sp" data-slide-to="1"></li>
+									   	<li data-target="#hot-1-sp" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="img/camping.png" class="img-fluid">
+									    </div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#hot-1-tab" data-slide="prev">
+									   	<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#hot-1-tab" data-slide="next">
+									   	<span class="carousel-control-next-icon"></span>
+									</a>
+		 						</div>
+		 						<div class="hot-subtitle">Aktifitas</div>
+								<div class="hot-title" style="height: 60px">Judul Package 2 baris baris baris baris baris</div>
+								<div class="destination" style="margin-top: 0.5px">Destinasi</div>
+								<div style="margin-top: 16px; padding-bottom: 8px">
+									<img src="img/icon/pin-point.png" width="16" height="16">
+									<span class="lokasi">Lokasi</span><br>
+									<img src="img/icon/time.png" width="16" height="16">
+									<span class="lokasi">Durasi</span>
+									<div class="harga">Rp2.700.000 per orang</div>
+								</div>
+							</li>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 40px">
+					   	<div class="col-12">
+					   		<center>
+					   			<div class="page-sp">
+								  <a href="#" class="active" style="margin-left: 0">1</a>
+								  <a href="#">2</a>
+								  <a href="#">3</a>
+								  <a href="#">4</a>
+								  <a href="#">5</a>
+								  <a href="#" style="margin-right: 0"><img src="img/icon/chevron-right.png" width="12"></a>
+								</div>
+					   		</center>
+					   	</div>
+					</div>
+				</div>
+			</div>
+			<div id="trip-creator-sp" class="tab-pane">
+				<div style="margin-right: 40px; margin-left: 40px">
+					<div class="row" style="margin-bottom: 40px">
+						<div class="col-12">
+							<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-bottom: 40px">
+						<div class="col-12">
+							<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-bottom: 40px">
+						<div class="col-12">
+							<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-bottom: 40px">
+						<div class="col-12">
+							<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-bottom: 40px">
+						<div class="col-12">
+							<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-bottom: 40px">
+						<div class="col-12">
+							<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-bottom: 40px">
+						<div class="col-12">
+							<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-bottom: 40px">
+						<div class="col-12">
+							<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-bottom: 40px">
+						<div class="col-12">
+							<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-bottom: 40px">
+						<div class="col-12">
+							<center><img src="img/regi.jfif" class="img-fluid rounded-circle"></center>
+					      	<div class="hot-subtitle">#1 Rank</div>
+							<div class="hot-title" style="height: 60px">Muhammad Regi Arfiandi</div>
+							<div class="destination" style="margin-top: 0.5px">Occupation</div>
+							<div style="font-family: 'SF Pro Text'; color: #4A4A4A; font-size: 13px; margin-top: 16px">"Increasing Prosperity With Positive Thinking"</div>
+							<div style="margin-top: 16px; padding-bottom: 8px">
+								<img src="img/icon/pin-point.png" width="16" height="16">
+								<span class="lokasi">Jakarta</span><br>
+								<img src="img/icon/time.png" width="16" height="16">
+								<span class="lokasi">22 Years Old</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+					   	<div class="col-12">
+					   		<center>
+					   			<div class="page-sp">
+								  <a href="#" class="active" style="margin-left: 0">1</a>
+								  <a href="#">2</a>
+								  <a href="#">3</a>
+								  <a href="#">4</a>
+								  <a href="#">5</a>
+								  <a href="#" style="margin-right: 0"><img src="img/icon/chevron-right.png" width="12"></a>
+								</div>
+					   		</center>
+					   	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="box-sizing: border-box; height: 2px; width: 100%; border: 1px solid #D4D4D4; box-shadow: 0 2px 4px 0 #D4D4D4; margin-top: 88px; margin-bottom: 56px;"></div>
+		<div class="about-us-wrapper" style="padding-top: 0px; background-color: #FFFFFF">
+			<div class="container" style="margin: 0; max-width: 768px">
+				<div class="row">
+					<div class="col-12">
+						<center><span class="about-us">About Us</span></center>
+					</div>
+					<div class="col-12" style="margin-top: 40px">
+						<center><span class="ululatrip-tablet">Ululatrip</span></center>
+					</div>
+					<div class="col-12" style="margin-top: 32px"></div>
+					<div style="width: 11%"></div>
+					<div style="width: 78%">
+						<center>
+							<span class="about-us-desc-sp">
+								You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property as a vacation rental to help defray the costs of ownership. How do you price a vacation home rental without overcharging but making enough to cover your costs? Do your research.
+							</span>
+						</center>
+					</div>
+					<div style="width: 11%"></div>
+					<div class="col-12" style="margin-top: 40px"></div>
+					<div class="col-1"></div>
+					<div class="col-10">
+						<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/instagram.png" onmouseover="this.src='img/icon/instagram-pink.png'" onmouseout="this.src='img/icon/instagram.png'" width="20">
+									</a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/facebook.png" onmouseover="this.src='img/icon/facebook-pink.png'" onmouseout="this.src='img/icon/facebook.png'" width="20"></a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/line.png" onmouseover="this.src='img/icon/line-pink.png'" onmouseout="this.src='img/icon/line.png'" width="20"></a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/whatsapp.png" onmouseover="this.src='img/icon/whatsapp-pink.png'" onmouseout="this.src='img/icon/whatsapp.png'" width="20"></a>
+								</center>
+							</div>
+						</div>
+					</div>
+					<div class="col-1"></div>
+					<div class="col-12" style="margin-bottom: 48px"></div>
+				</div>
+			</div>
+		</div>
+		<div class="sign-up-now">
+			<div class="container" style="margin: 0; max-width: 1024px">
+				<div class="row">
+					<div class="col-12" style="padding-top: 50px;">
+						<center><span id="what-are-you-waiting">What Are You Waiting For?</span></center>
+					</div>
+					<div class="col-12" style="margin-top: 50px">
+						<center><a href="#" type="button" class="btn sign-up-now-btn" style="width: 280px"><span style="position: absolute; left: 32%; top: 20%">SIGN UP NOW</span></a></center>
+					</div>
+					<div class="col-12" style="padding-bottom: 88px;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container" style="margin: 0; max-width: 768px;">
+				<div class="row">
+					<div class="col-12" style="padding-top: 56px">
+						<center><span class="ululatrip" style="color: #4A4A4A">Ululatrip</span></center>
+					</div>
+					<div class="col-12" style="padding-top: 24px">
+						<center><a href="#" class="footer-text">About Us</a></center>
+					</div>
+					<div class="col-12" style="padding-top: 16px">
+						<center><a href="#" class="footer-text">Apply Trip Creator</a></center>
+					</div>
+					<div class="col-12" style="padding-top: 24px">
+						<center><a href="#" class="footer-text">Apply Merchant</a></center>
+					</div>
+					<div class="col-12" style="padding-top: 24px">
+						<center><a href="#" class="footer-text">Contact</a></center>
+					</div>
+					<div class="col-12" style="padding-top: 24px">
+						<center><a href="#" class="footer-text">F.A.Q</a></center>
+					</div>
+					<div class="col-12" style="padding-top: 24px">
+						<center><a href="#" class="footer-text">Package</a></center>
+					</div>
+					<div class="col-12" style="margin-top: 56px"></div>
+					<div style="width: 10%"></div>
+					<div style="width: 25%">
+						<center><a href="#" class="footer-text-2">Privacy Policy</a></center>
+					</div>
+					<div style="width: 25%">
+						<center><a href="#" class="footer-text-2">Sitemap</a></center>
+					</div>
+					<div style="width: 30%">
+						<center><a href="#" class="footer-text-2">© 2018 Ululatrip</a></center>
+					</div>
+					<div style="width: 10%"></div>
+					<div class="col-12" style="margin-top: 88px"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="login-modal">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 625px">
+    <div class="modal-content" style="padding-left: 80px; padding-right: 80px">
+
+      <!-- Modal body -->
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal" style="position: absolute; left: 480px; top: 0px; font-size: 40px">&times;</button><br>
+        <center><span id="login-modal-title">Login</span></center>
+        <form action="#">
+        	<div class="form-group">
+        		<label class="login-modal-label">Email</label>
+        		<input type="email" name="email" class="form-control" placeholder="Traveler@ululatrip.com" required="required">
+        	</div>
+        	<div class="form-group">
+        		<label class="login-modal-label">Password</label>
+        		<input type="password" name="password" class="form-control" placeholder="********" required="required">
+        	</div>
+        	<div class="row" style="margin-bottom: 40px">
+        		<div class="col-6">
+        			<label class="checkbox-baru">Remember Me
+					  <input type="checkbox" checked="checked">
+					  <span class="checkmark"></span>
+					</label>
+        		</div>
+        		<div class="col-6">
+        			<label style="position: absolute; top: -5px; right: 14px">
+        				<a href="#" style="color: #9B9B9B; font-family: 'SF Pro Text'; font-size: 13px; ">Forget Password</a>
+        			</label>
+        		</div>
+        	</div>
+        	<div class="row" style="margin-bottom: 40px">
+        		<div class="col-12">
+        			<center><button class="button-pink" style="margin-top: 0px">LOGIN</button></center>
+        		</div>
+        		<div class="col-12" style="margin-top: 16px"></div>
+        		<div class="col-12">
+        			<center>
+        				<span style="color: #4A4A4A; font-family: 'SF Pro Text'; font-size: 13px;">Don't worry <a href="#" style="color: #FB7378; text-decoration: underline;">SIGN UP</a> is always available HERE :)</span>
+        			</center>
+        		</div>
+        	</div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Signup Mpdal -->
+<div class="modal fade" id="signup-modal">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 625px">
+    <div class="modal-content" style="padding-left: 80px; padding-right: 80px">
+
+      <!-- Modal body -->
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal" style="position: absolute; left: 480px; top: 0px; font-size: 40px">&times;</button><br>
+        <center><span class="login-modal-title">Sign Up</span></center>
+        <form action="#">
+        	<div class="form-group">
+        		<label class="login-modal-label">Full Name</label>
+        		<input type="text" name="full_name" class="form-control" placeholder="Ulula Trip" required="required">
+        	</div>
+        	<div class="form-group">
+        		<label class="login-modal-label">Email</label>
+        		<input type="email" name="email" class="form-control" placeholder="Traveler@ululatrip.com" required="required">
+        	</div>
+        	<div class="form-group">
+        		<label class="login-modal-label">Password</label>
+        		<input type="password" name="password" class="form-control" placeholder="********" required="required">
+        	</div>
+        	<div class="row" style="margin-bottom: 40px">
+        		<div class="col-12">
+        			<label class="checkbox-baru">I agree with the terms & conditions. <a href="#" style="color: #FD7575">Read</a>
+					  <input type="checkbox" checked="checked">
+					  <span class="checkmark"></span>
+					</label>
+        		</div>
+        	</div>
+        	<div class="row" style="margin-bottom: 40px">
+        		<div class="col-12">
+        			<center><button class="button-pink" style="margin-top: 0px">SIGN UP</button></center>
+        		</div>
+        		<div class="col-12" style="margin-top: 16px"></div>
+        		<div class="col-12">
+        			<center>
+        				<span style="color: #4A4A4A; font-family: 'SF Pro Text'; font-size: 13px;">Already have account? <a href="#" style="color: #FB7378;">Login</a></span>
+        			</center>
+        		</div>
+        	</div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.trip-package').addClass('title-tab');
+
+		$('a[href="#trip-package"]').click(function() {
+			$('.trip-package').addClass('title-tab');
+			$('.trip-creator').removeClass('title-tab');
+		});
+
+		$('a[href="#trip-creator"]').click(function() {
+			$('.trip-creator').addClass('title-tab');
+			$('.trip-package').removeClass('title-tab');
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.trip-package-tablet').addClass('title-tab');
+
+		$('a[href="#trip-package-tablet"]').click(function() {
+			$('.trip-package-tablet').addClass('title-tab');
+			$('.trip-creator-tablet').removeClass('title-tab');
+		});
+
+		$('a[href="#trip-creator-tablet"]').click(function() {
+			$('.trip-creator-tablet').addClass('title-tab');
+			$('.trip-package-tablet').removeClass('title-tab');
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.trip-package-sp').addClass('title-tab');
+
+		$('a[href="#trip-package-sp"]').click(function() {
+			$('.trip-package-sp').addClass('title-tab');
+			$('.trip-creator-sp').removeClass('title-tab');
+		});
+
+		$('a[href="#trip-creator-sp"]').click(function() {
+			$('.trip-creator-sp').addClass('title-tab');
+			$('.trip-package-sp').removeClass('title-tab');
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	$('.carousel').carousel({
+	    interval: false
+	}); 
+</script>
+
+</body>
+</html>

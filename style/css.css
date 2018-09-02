@@ -1,0 +1,1642 @@
+.ululatrip {
+	height: 44px;
+	width: 41px;
+	color: #FD7575;
+	font-family: Astronout;
+	font-size: 44px;
+	line-height: 44px;
+	text-align: center;
+}
+
+a.ululatrip:hover {
+	color: #FD7575;
+	text-decoration: none;
+}
+
+.ululatrip-tablet {
+	height: 28px;
+	width: 32px;
+	color: #FD7575;
+	font-family: Astronout;
+	font-size: 28px;
+	line-height: 28px;
+	text-align: center;
+}
+
+a.ululatrip-tablet:hover {
+	color: #FD7575;
+	text-decoration: none;
+}
+
+.ululatrip-sp {
+	height: 41px;
+	width: 46px;
+	color: #FD7575;
+	font-family: Astronout;
+	font-size: 41px;
+	line-height: 41px;
+	text-align: center;
+}
+
+a.ululatrip-sp:hover {
+	color: #FD7575;
+	text-decoration: none;
+}
+
+.navbar {
+	height: 16px;
+	color: #FFFFFF;
+	font-family: Eina03-SemiBold;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	margin-top: 14px
+}
+
+a.navbar:hover {
+	color: #FD7575;
+}
+
+.navbar-tablet {
+	height: 16px;
+	color: #FFFFFF;
+	font-family: Eina03-SemiBold;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+}
+
+a.navbar-tablet:hover {
+	color: #FD7575;
+}
+
+.signup-text {
+	height: 44px;	
+	width: 122px;
+	color: #FD7575;
+	font-family: "SF Pro Display";
+	font-size: 14px;
+	line-height: 42px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 2px solid #FD7575;	border-radius: 5px;	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.signup-text:hover {
+	background-color: #FD7575;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.signup-text-tablet {
+	height: 21px;
+	width: 85.35px;
+	color: #FD7575;
+	font-family: "SF Pro Display";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 2px solid #FD7575;	border-radius: 5px;	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.signup-text-tablet:hover {
+	background-color: #FD7575;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.nav {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.home-header {
+	margin-left: 32px;
+	margin-right: 32px;
+	margin-top: 16px;
+	padding-bottom: 90px;
+}
+
+.home-header-tablet {
+	margin-left: 51.5px;
+	margin-right: 45px;
+	margin-top: 24px;
+	padding-bottom: 90px;
+}
+
+.home-header-sp {
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-top: 8px;
+	padding-bottom: 85px;
+}
+
+.all-package-header {
+	margin-left: 32px;
+	margin-right: 32px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.all-package-header-tablet {
+	margin-left: 45px;
+	margin-right: 45px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.all-package-header-sp {
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-top: 16px;
+	margin-bottom: 20px;
+}
+
+.exp-peo-trip {
+	height: 84px;
+	width: 646px;
+	color: #FFFFFF;
+	font-family: Eina03-Regular;
+	font-size: 56px;
+	line-height: 84px;
+	text-align: center;
+	margin-top: 56px
+}
+
+.exp-peo-trip-sp {
+	height: 102px;
+	color: #FFFFFF;
+	font-family: Eina03-Regular;
+	font-size: 34px;
+	line-height: 51px;
+	text-align: center;
+	margin-top: 48px;
+}
+
+#marketplace {
+	height: 30px;
+	width: 700px;
+	color: #FFFFFF;
+	font-family: Eina03-Regular;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 16px;
+}
+
+#marketplace-sp {
+	height: 120px;
+	width: 242px;
+	color: #FFFFFF;
+	font-family: Eina03-Regular;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 16px;
+}
+
+.button-pink {
+	height: 44px;
+	width: 290px;
+	border-radius: 5px;
+	background: linear-gradient(45deg, #F36D7C 0%, #FE7676 100%);
+	box-shadow: 0 2px 4px 0 #4A4A4A;
+	color: #FFFFFF;	font-family: "SF Pro Display";	font-size: 14px;
+	margin-top: 136px;
+}
+
+.button-pink-sp {
+	height: 44px;
+	width: 274px;
+	border-radius: 5px;
+	background: linear-gradient(45deg, #F36D7C 0%, #FE7676 100%);
+	box-shadow: 0 2px 4px 0 #4A4A4A;
+	margin-top: 144px;
+}
+
+.button-pink-text {
+	color: #FFFFFF;	font-family: "SF Pro Display";	font-size: 14px;
+}
+
+.button-pink-text:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.body {
+	background-color: #FFFFFF;
+	padding-top: 58px;
+}
+
+.how-we-work {
+	height: 2.05%;
+	width: 31.93%;
+	color: #4A4A4A;
+	font-family: Eina03-Regular;
+	font-size: 45px;
+	line-height: 68px;
+	text-align: center;
+}
+
+.how-we-work-sp {
+	height: 102px;
+	width: 230px;
+	color: #4A4A4A;
+	font-family: Eina03-Regular;
+	font-size: 34px;
+	line-height: 51px;
+	text-align: center;
+}
+
+.description {
+	color: #9B9B9B;
+	font-family: Eina03-Regular;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.description-sp {
+	color: #9B9B9B;
+	font-family: Eina03-Regular;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.judul-actor {
+	height: 30px;
+	width: 208px;
+	color: #4A4A4A;
+	font-family: "SF Pro Display";
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	text-align: center;
+}
+
+.description-actor {
+	height: 63px;
+	width: 290px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	text-align: center;
+	padding-top: 16px;
+}
+
+.description-actor-tablet {
+	height: 84px;
+	width: 210px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	text-align: center;
+	padding-top: 16px;
+}
+
+.description-actor-sp {
+	height: 63px;
+	width: 230px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	text-align: center;
+	padding-top: 16px;
+}
+
+.hot-trip-package {
+	height: 68px;
+	width: 366px;
+	color: #4A4A4A;
+	font-family: Eina03-Regular;
+	font-size: 45px;
+	line-height: 68px;
+	text-align: center;
+}
+
+.hot-trip-package-sp {
+	height: 102px;
+	width: 240px;
+	color: #4A4A4A;
+	font-family: Eina03-Regular;
+	font-size: 34px;
+	line-height: 51px;
+	text-align: center;
+}
+
+.hot-subtitle {
+	height: 20px;
+	width: 207px;
+	color: #9B9B9B;
+	font-family: "SF Pro Text";
+	font-size: 15px;
+	line-height: 22px;
+	margin-top: 16px;
+}
+
+.hot-title {
+	height: 30px;
+	width: 207px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.destination {
+	height: 20px;
+	width: 207px;
+	color: #FD7575;
+	font-family: "SF Pro Text";
+	font-size: 15px;
+	line-height: 22px;
+	margin-top: 32px;
+}
+
+.lokasi {
+	height: 18px;
+	width: 187px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.harga {
+	height: 21px;
+	width: 207px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	line-height: 21px;
+	margin-top: 16px;
+}
+
+#see-all-packages {
+	height: 16px;
+	width: 150px;
+	color: #FD7575;
+	font-family: Eina03-SemiBold;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+}
+
+.trip-creator-rank {
+	height: 68px;
+	width: 700px;
+	color: #FFFFFF;
+	font-family: Eina03-Regular;
+	font-size: 45px;
+	line-height: 68px;
+	text-align: center;
+	margin-top: 48px;
+}
+
+.trip-creator-rank-sp {
+	height: 102px;
+	width: 240px;
+	color: #FFFFFF;
+	font-family: Eina03-Regular;
+	font-size: 34px;
+	line-height: 51px;
+	text-align: center;
+	margin-top: 48px;
+}
+
+.number {
+	height: 30px;
+	width: 14px;
+	color: #FFFFFF;
+	font-family: "SF Pro Display";
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	text-align: center;
+}
+
+.number-sp {
+	height: 21px;
+	width: 14px;
+	color: #FFFFFF;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.trip-creator-rank-name {
+	height: 30px;
+	width: 360px;
+	color: #FFFFFF;
+	font-family: "SF Pro Display";
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.trip-creator-rank-name-sp {
+	height: 21px;
+	width: 173px;
+	color: #FFFFFF;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+}
+
+.trip-creator-rank-job {
+	height: 0.54%;
+	width: 35.16%;
+	color: #D4D4D4;
+	font-family: "SF Pro Text";
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.trip-creator-rank-job-sp {
+	height: 18px;
+	width: 173px;
+	color: #FFFFFF;
+	font-family: "SF Pro Text";
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.trip-creator-rank-quote {
+	height: 22px;
+	width: 360px;
+	color: #FFFFFF;
+	font-family: "SF Pro Text";
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.show-all {
+	height: 16px;
+	width: 84px;
+	color: #FFFFFF;
+	font-family: Eina03-SemiBold;
+
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+}
+
+.show-all:hover {
+	color: #FFFFFF;
+}
+
+.about-us {
+	height: 36px;
+	width: 104px;
+	color: #4A4A4A;
+	font-family: Eina03-Regular;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+}
+
+.about-us-wrapper {
+	background-color: #FFFFFF;
+	padding-top: 40px;
+}
+
+.about-us-desc {
+	height: 84px;
+	width: 700px;
+	color: #9B9B9B;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	text-align: center;
+}
+
+.about-us-desc-tablet {
+	height: 105px;
+	width: 652px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	text-align: center;
+}
+
+.about-us-desc-sp {
+	height: 231px;
+	width: 242px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	text-align: center;
+}
+
+.sign-up-now {
+	background: linear-gradient(45deg, #F36D7C 0%, #F46D7C 5.29%, #FE7676 100%);
+}
+
+#what-are-you-waiting {
+	height: 1.08%;
+	width: 43.95%;
+	color: #FFFFFF;
+	font-family: Eina03-Regular;
+	font-size: 36px;
+	line-height: 49px;
+	text-align: center;
+}
+
+#what-are-you-waiting-sp {
+	height: 102px;
+	width: 242px;
+	color: #FFFFFF;
+	font-family: Eina03-Regular;
+	font-size: 34px;
+	line-height: 51px;
+	text-align: center;
+}
+
+.sign-up-now-btn {
+	position: relative;
+	height: 44px;
+	width: 290px;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 4px 0 #4A4A4A;
+	color: #FD7575;	font-family: "SF Pro Display";	font-size: 14px;	font-weight: 500;
+}
+
+.sign-up-now-btn:hover {
+	color: #FD7575;
+}
+
+.footer {
+	background-color: #FFFFFF;
+}
+
+.footer-text {
+	height: 30px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 30px;
+	text-align: center;
+}
+
+.footer-text:hover {
+	color: #4A4A4A
+}
+
+.footer-text-2 {
+	height: 30px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 10px;
+	font-weight: 300;
+	line-height: 30px;
+	text-align: center;
+}
+
+.footer-text-2:hover {
+	color: #4A4A4A
+}
+
+.login-modal-title {
+	color: #4A4A4A;	
+	font-family: Eina03-Regular;	
+	font-size: 34px;
+}
+
+.login-modal-label {
+	color: #4A4A4A;	
+	font-family: "SF Pro Text";	
+	font-size: 20px;
+	font-weight: 500;
+}
+
+::placeholder {
+    color: #D4D4D4;	font-family: "SF Pro Text";	font-size: 13px;
+}
+
+.checkbox-baru {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #9B9B9B; font-family: 'SF Pro Text'; font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-baru input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 2px;	
+  background-color: #FFFFFF;	
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-baru:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-baru input:checked ~ .checkmark {
+  background-color: #FB7378;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-baru input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-baru .checkmark:after {
+  left: 5px;
+  top: 0px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    max-width: 91px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #FFFFFF;	font-family: Eina03-SemiBold;	font-size: 16px;
+    padding-top: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: transparent; color: #FB7378}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.dropdown-package {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-package-content {
+    display: none;
+    background-color: transparent;
+    max-width: 100%;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-package-content a {
+   	text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-package-content a:hover {background-color: transparent; color: #FFFFFF}
+
+/* Show the dropdown menu on hover */
+.dropdown-package:hover .dropdown-package-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-package:hover .dropbtn {background-color: #3e8e41;}
+
+.view-package {
+	height: 44px;
+	width: 100%;
+	border-radius: 5px;
+	background: linear-gradient(45deg, #F36D7C 0%, #FE7676 100%);
+	box-shadow: 0 2px 4px 0 #4A4A4A;
+}
+
+.search-package {
+	height: 44px;
+	width: 542px;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 4px 0 #D4D4D4;
+}
+
+.search-package-tablet {
+	height: 44px;
+	width: 372px;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 4px 0 #D4D4D4;
+}
+
+.search-package-sp {
+	height: 44px;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 4px 0 #D4D4D4;
+}
+
+#icon {
+	background-image:url(../img/icon/search.png); 
+	background-size: 21px;
+	background-repeat: no-repeat; 
+	background-position: 14px 10px;
+}
+
+#icon-sp {
+	background-image:url(../img/icon/search.png); 
+	background-size: 21px;
+	background-repeat: no-repeat; 
+	background-position: 10px 10px;
+}
+
+.line-3 {
+	box-sizing: border-box;
+	height: 0.06%;
+	width: 100%;
+	border: 1px solid #D4D4D4;
+	box-shadow: 0 2px 4px 0 #D4D4D4;
+}
+
+.tab-title {
+	height: 36px;
+	color: #4A4A4A;
+	font-family: Eina03-Regular;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+}
+
+.tab-title:hover {
+	color: #4A4A4A;
+	text-decoration: none;
+}
+
+.tab-title-sp {
+	height: 30px;
+	color: #4A4A4A;
+	font-family: Eina03-Regular;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.tab-title-sp:hover {
+	color: #4A4A4A;
+	text-decoration: none;
+}
+
+
+.title-tab {
+	border-bottom: 3px solid #FD7575;
+}
+
+
+.package-btn {
+	height: 44px;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 4px 0 #D4D4D4;
+	margin-right: 24px
+}
+
+.package-btn-text {
+	color: #9B9B9B;	font-family: "SF Pro Display";	font-size: 14px;
+}
+
+.package-btn-text:hover {
+	color: #9B9B9B; text-decoration: none;
+}
+
+.page {
+	display: inline-block;
+}
+
+.page a {
+	color: #9B9B9B;	font-family: "SF Pro Text";	font-size: 14px;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+.page a.active {
+	display: inline-block;
+	height: 32px;
+	width: 24px;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 4px 0 #D4D4D4;
+	color: #FD7575;
+	padding-bottom: -5px;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+.page a:hover:not(.active) {
+    color: #9B9B9B
+}
+
+.page-sp {
+	display: inline-block;
+}
+
+.page-sp a {
+	color: #9B9B9B;	font-family: "SF Pro Text";	font-size: 14px;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.page-sp a.active {
+	display: inline-block;
+	height: 32px;
+	width: 24px;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 4px 0 #D4D4D4;
+	color: #FD7575;
+	padding-bottom: -5px;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+.page-sp a:hover:not(.active) {
+    color: #9B9B9B
+}
+
+.be-a-trip-creator {
+	height: 51px;
+	color: #4A4A4A;
+	font-family: Eina03-Regular;
+	font-size: 34px;
+	line-height: 51px;
+	text-align: center;
+	margin-top: 56px;
+}
+
+.trip-creator-title {
+	height: 30px;
+	width: 208px;
+	color: #4A4A4A;
+	font-family: "SF Pro Display";
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 16px;
+}
+
+.form-tc-title {
+	height: 30px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	margin-top: 8px
+}
+
+.form-tc-note {
+	height: 18px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 12px;
+	line-height: 18px;
+}
+
+/* The container */
+.container-radio {
+    display: inline;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #9B9B9B;	
+    font-family: "SF Pro Text";
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-right: 32px;
+}
+
+/* Hide the browser's default radio button */
+.container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #979797;	
+    background-color: #FFFFFF;	
+    box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container-radio:hover input ~ .checkmark-radio {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container-radio input:checked ~ .checkmark-radio {
+    background-color: #FFFFFF;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-radio input:checked ~ .checkmark-radio:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-radio .checkmark-radio:after {
+ 	top: 2.5px;
+	left: 2px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #FD7575;;
+}
+
+.agree {
+	height: 21px;
+	color: #D4D4D4;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.apply-trip-creator {
+	height: 44px;
+	width: 290px;
+	border-radius: 5px;
+	background: linear-gradient(45deg, #F36D7C 0%, #FE7676 100%);
+	box-shadow: 0 2px 4px 0 #4A4A4A;
+	color: #FFFFFF;
+	margin-top: 40px;
+	margin-bottom: 88px;
+}
+
+.apply-trip-creator:hover {
+	color: #FFFFFF;
+}
+
+.apply-trip-creator-sp {
+	height: 44px;
+	width: 100%;
+	border-radius: 5px;
+	background: linear-gradient(45deg, #F36D7C 0%, #FE7676 100%);
+	box-shadow: 0 2px 4px 0 #4A4A4A;
+	color: #FFFFFF;
+	margin-top: 40px;
+	margin-bottom: 88px;
+}
+
+.apply-trip-creator-sp:hover {
+	color: #FFFFFF;
+}
+
+.apply-trip-creator-txt {
+	height: 21px;
+	width: 208px;
+	color: #FFFFFF;
+	font-family: "SF Pro Display";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	text-align: center;
+}
+
+.package-wrapper {
+	margin-top: 52px;
+	margin-left: 32px;
+	margin-right: 32px;
+	margin-bottom: 88px;
+}
+
+.package-category {
+	height: 20px;
+	width: 207px;
+	color: #9B9B9B;
+	font-family: "SF Pro Text";
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.package-title {
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	margin-top: 8px;
+}
+
+.package-title:hover {
+	color: #4A4A4A;
+	text-decoration: none;
+}
+
+.destinasi {
+	height: 44px;
+	color: #FD7575;
+	font-family: "SF Pro Text";
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.lok-dur-quo {
+	width: 187px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 12px;
+}
+
+.package-price {
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	float: right;
+	font-family: "SF Pro Text";
+	font-size: 12px;
+	font-weight: 700;
+	padding: 5px
+}
+
+.package-price-sp {
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	float: left;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	font-weight: 700;
+	padding: 5px;
+	margin-top: 8px
+}
+
+.line-package {
+	box-sizing: border-box;
+	border: 1px solid #D4D4D4;
+	box-shadow: 0 2px 4px 0 #D4D4D4;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.package-detail {
+	color: #9B9B9B;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	line-height: 21px;
+	margin-top: 8px;
+}
+
+.dates-traveler-wrapper {
+	height: 260px;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 4px 0 #D4D4D4;
+	padding: 16px 8px 16px 8px;
+}
+
+.form-package-label {
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.form-package-input {
+	height: 36px;
+	border: 1px solid #D4D4D4;
+	border-radius: 3px;
+	background-color: #FFFFFF;
+	width: 100%;
+	color: #D4D4D4;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+}
+
+option.option-package {
+	height: 21px;
+	width: 168.68px;
+	color: #D4D4D4;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.buy-btn {
+	margin-top: 24px;
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	background: linear-gradient(45deg, #F36D7C 0%, #FE7676 100%);
+	box-shadow: 0 2px 4px 0 #4A4A4A;
+	color: #FFFFFF;
+}
+
+.traveler-profile-wrapper {
+	height: 274px;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 4px 0 #D4D4D4;
+	margin-top: 16px;
+	padding: 16px 8px 16px 8px;
+}
+
+.message-btn {
+	height: 40px;
+	min-width: 55%;
+	background: #FFFFFF;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	color: #D4D4D4;	font-family: "SF Pro Display";	font-size: 14px;
+}
+
+.peringkat {
+	height: 21px;
+	width: 16px;
+	color: #9B9B9B;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	line-height: 21px;
+	margin-top: 4px;
+}
+
+.nama-di-package {
+	height: 21px;
+	width: 191px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.job-di-package {
+	height: 18px;
+	width: 191px;
+	color: #FD7575;
+	font-family: "SF Pro Text";
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.motto-di-package {
+	height: 36px;
+	width: 191px;
+	color: #9B9B9B;
+	font-family: "SF Pro Text";
+	font-size: 12px;
+	line-height: 18px;
+	margin-top: 16px;
+}
+
+.package-day {
+	height: 20px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 16px;
+}
+
+.day-desc {
+	color: #9B9B9B;
+	font-family: "SF Pro Display";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	margin-top: 8px;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: center;
+  width: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, .7);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 600px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile-rank {
+	height: 30px;
+	width: 70px;
+	color: #9B9B9B;
+	font-family: "SF Pro Display";
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.profile-rank-sp {
+	height: 30px;
+	width: 70px;
+	color: #9B9B9B;
+	font-family: "SF Pro Display";
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 8px;
+}
+
+.profile-name {
+	height: 36px;
+	width: 374px;
+	color: #4A4A4A;
+	font-family: Eina03-Regular;
+	font-size: 24px;
+	line-height: 36px;
+	margin-top: 8px;
+}
+
+.profile-name-sp {
+	height: 72px;
+	width: 239px;
+	color: #4A4A4A;
+	font-family: Eina03-Regular;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+	margin-top: 8px;
+}
+
+.profile-occupation {
+	height: 30px;
+	width: 101px;
+	color: #FD7575;
+	font-family: "SF Pro Display";
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 8px;
+}
+
+.profile-quote {
+	height: 21px;
+	width: 374px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	line-height: 21px;
+	margin-top: 16px;
+}
+
+.profile-quote-sp {
+	height: 42px;
+	width: 241px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	margin-top: 16px;
+}
+
+.profile-message-btn {
+	height: 40px;
+	width: 374px;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	color: #D4D4D4;
+	font-family: "SF Pro Display";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	text-align: center;
+	background: #FFFFFF;
+}
+
+.profile-message-btn-tab {
+	height: 40px;
+	width: 333px;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	color: #D4D4D4;
+	font-family: "SF Pro Display";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	text-align: center;
+	background: #FFFFFF;
+}
+
+.profile-message-btn-sp {
+	height: 40px;
+	width: 100%;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	color: #D4D4D4;
+	font-family: "SF Pro Display";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	text-align: center;
+	background: #FFFFFF;
+}
+
+.line-profile {
+	box-sizing: border-box;
+	height: 2px;
+	border: 1px solid #D4D4D4;
+	box-shadow: 0 2px 4px 0 #D4D4D4;
+	margin-top: 40px;
+}
+
+.profile-package {
+	height: 51px;
+	width: 161px;
+	color: #4A4A4A;
+	font-family: Eina03-Regular;
+	font-size: 34px;
+	line-height: 51px;
+	text-align: center;
+}
+
+.edit-profile-title {
+	height: 51px;
+	width: 172px;
+	color: #4A4A4A;
+	font-family: Eina03-Regular;
+	font-size: 34px;
+	line-height: 51px;
+	text-align: center;
+	margin-top: 56px;
+}
+
+.personal-data {
+	height: 36px;
+	color: #4A4A4A;
+	font-family: Eina03-Regular;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+	margin-top: 40px;
+	text-align: left;
+}
+
+.form-edit-title {
+	height: 30px;
+	color: #4A4A4A;
+	font-family: "SF Pro Text";
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	margin-top: 16px
+}
+
+.change-photo-btn {
+	height: 40px;
+	width: 241px;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	color: #D4D4D4;
+	font-family: "SF Pro Display";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	text-align: center;
+	background: #FFFFFF;
+}
+
+.change-photo-btn-sp {
+	height: 40px;
+	width: 100%;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	color: #D4D4D4;
+	font-family: "SF Pro Display";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	text-align: center;
+	background: #FFFFFF;
+}
+
+.create-package-text {
+	height: 42px;
+	width: 292px;
+	color: #9B9B9B;
+	font-family: "SF Pro Text";
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.create-now-btn {
+	height: 44px;
+	width: 292px;
+	border: 2px solid #FD7575;
+	border-radius: 5px;
+	color: #FD7575;
+	font-family: "SF Pro Display";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	text-align: center;
+	background-color: #FFFFFF;
+	margin-top: 168px;
+	margin-bottom: 40px;
+}

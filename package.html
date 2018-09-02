@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ululatrip</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="style/css.css">
+
+  	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  	<style type="text/css">
+  		@font-face {
+		    font-family: Eina03-Regular;
+		    src: url(font/eina-03-regular.woff) format('woff');
+		}
+
+		@font-face {
+		    font-family: Astronout;
+		    src: url(font/Astronout.ttf) format('truetype');
+		}
+
+		@font-face {
+		    font-family: Eina03-SemiBold;
+		    src: url(font/eina-03-semibold.woff) format('woff');
+		    font-weight: 300;
+		}
+
+		@font-face {
+		    font-family: SF Pro Display;
+		    src: url(font/SF-Pro-Display-Regular.otf) format('opentype');
+		}
+
+		@font-face {
+		    font-family: SF Pro Text;
+		    src: url(font/SF-Pro-Text-Regular.otf) format('opentype');
+		}
+
+		body {
+		    font-family: Eina03-Regular;
+		}
+  	</style>
+</head>
+<body>
+
+<div class="d-none d-lg-block">
+	<div class="container" style="margin: 0; max-width: 1920px; padding: 0">
+		<header class="all-package-header">
+			<div class="row">
+				<div class="col-9">
+					<ul class="nav">
+						<li><a href="#" class="ululatrip" style="padding: 0px; margin-right: 42px">Ululatrip</a></li>
+						<li>
+							<form action="#">
+								<input id="icon" style="text-indent: 17px; padding-left: 32px" type="text" name="search" class="search-package" placeholder='Try "Labuan Bajo", "Trekking", "Your Fav Trip Creator"'>
+							</form>
+						</li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<ul class="nav" style="float: right;">
+						<li><a href="#" class="navbar" style="margin-right: 58px; padding: 0px; color: #4A4A4A" data-toggle="modal" data-target="#login-modal">Sign In</a></li>
+						<li><a href="#" class="signup-text">SIGN UP</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="line-3"></div>
+		<div class="package-wrapper">
+			<div class="row" style="margin: 0px; padding: 0px">
+				<div class="row" style="max-width: 80%; margin: 0px; padding: 0px;">
+					<div style="max-width: 40%; margin-right: 44px;">
+						<img src="img/trekking.png" onclick="openModal();currentSlide(1)" class="rounded hover-shadow" style="max-width: 100%">
+						<div style="margin-top: 24px"></div>
+						<div style="max-width: 100%">
+							<span style="width: 25%">
+								<img src="img/trekking.png" onclick="openModal();currentSlide(1)" class="rounded hover-shadow" style="max-width: 23%; margin-right: 1%">
+							</span>
+							<span style="width: 25%">
+								<img src="img/trekking.png" onclick="openModal();currentSlide(2)" class="rounded hover-shadow" style="max-width: 23%; margin-right: 1%">
+							</span>
+							<span style="width: 25%">
+								<img src="img/trekking.png" onclick="openModal();currentSlide(3)" class="rounded hover-shadow" style="max-width: 23%; margin-right: 1%">
+							</span>
+							<span style="width: 25%">
+								<img src="img/trekking.png" onclick="openModal();currentSlide(4)" class="rounded hover-shadow" style="max-width: 23%;">
+							</span>
+						</div>
+					</div>
+					<div style="max-width: 48%; margin-right: 42px;">
+						<div class="package-category">Aktifitas</div>
+						<div class="package-title">Judul Package 2 baris baris baris baris baris</div>
+						<div class="destinasi">Destinasi | Destinasi | Destinasi | Destinasi | Destinasi | Destinasi</div>
+						<div style="margin-top: 8px;">
+							<img src="img/icon/pin-point.png" width="12">
+							<span class="lok-dur-quo">Lokasi</span><br>
+							<img src="img/icon/time.png" width="12">
+							<span class="lok-dur-quo">Durasi</span><br>
+							<img src="img/icon/quota.png" width="12">
+							<span class="lok-dur-quo">Quota</span>
+							<span class="package-price">Rp22.700.000 <span style="color: #9B9B9B; font-weight: 500">per orang</span></span>
+						</div>
+						<div class="line-package"></div>
+						<div class="package-title">Package Overview</div>
+						<div class="package-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+					</div>
+					<div style="max-width: 95%; margin-top: 32px">
+						<a href="#" onclick="expand1()" class="package-title" data-toggle="collapse" data-target="#itinerary">Itinerary &nbsp;&nbsp;<img id="exp1" src="img/icon/expand-state.png" width="16"></a>
+						<div id="itinerary" class="collapse show">
+							<div class="package-day">Day 1</div>
+							<div class="day-desc">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+							<div class="package-day">Day 2</div>
+							<div class="day-desc">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+							<div class="package-day">Day 3</div>
+							<div class="day-desc">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+						<div style="margin-top: 32px"></div>
+						<a href="#" onclick="expand2()" class="package-title" data-toggle="collapse" data-target="#include">Include &nbsp;&nbsp;<img id="exp2" src="img/icon/expand-state.png" width="16"></a>
+						<div id="include" class="collapse show">
+							<div class="day-desc">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+						<div style="margin-top: 32px"></div>
+						<a href="#" onclick="expand3()" class="package-title" data-toggle="collapse" data-target="#exclude">Exclude &nbsp;&nbsp;<img id="exp3" src="img/icon/expand-state.png" width="16"></a>
+						<div id="exclude" class="collapse show">
+							<div class="day-desc">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+						<div style="margin-top: 32px"></div>
+						<a href="#" onclick="expand4()" class="package-title" data-toggle="collapse" data-target="#notes">Notes &nbsp;&nbsp;<img id="exp4" src="img/icon/expand-state.png" width="16"></a>
+						<div id="notes" class="collapse show">
+							<div class="day-desc">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="width: 20%; margin: 0px; padding: 0px">
+					<div class="dates-traveler-wrapper">
+						<form>
+							<label class="form-package-label">Dates</label>
+							<select class="form-control form-package-input" style="color: #D4D4D4;	font-family: 'SF Pro Text';	font-size: 13px;">
+								<option class="option-package">18 Aug 2018 - 20 Aug 2018</option>
+								<option class="option-package">18 Aug 2018 - 20 Aug 2018</option>
+								<option class="option-package">18 Aug 2018 - 20 Aug 2018</option>
+							</select>
+							<label class="form-package-label" style="margin-top: 8px">Traveler</label>
+							<select class="form-control form-package-input" style="color: #D4D4D4;	font-family: 'SF Pro Text';	font-size: 14px;">
+								<option class="option-package">1 orang</option>
+								<option class="option-package">1 orang</option>
+								<option class="option-package">1 orang</option>
+							</select>
+							<input type="submit" name="buy-btn" class="btn buy-btn" value="BUY">
+						</form>
+					</div>
+					<div class="traveler-profile-wrapper">
+						<img src="img/icon/icon-hot.png" width="70">
+						<button class="message-btn">MESSAGE</button>
+						<div class="peringkat">#1</div>
+						<div class="nama-di-package">Deandra Fihanna Marissi</div>
+						<div class="job-di-package">Ululatrip Founder</div>
+						<div class="motto-di-package">"Increasing Prosperity With Positive Thinking"</div>
+						<div style="margin-top: 16px">
+							<img src="img/icon/pin-point.png" width="9" height="9">
+							<span class="lokasi">Jakarta</span><hr style="height:2px; visibility:hidden; margin-bottom:-25px;" />
+							<img src="img/icon/person.png" width="9" height="9">
+							<span class="lokasi">22 Years Old</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="box-sizing: border-box; height: 2px; width: 100%; border: 1px solid #D4D4D4; box-shadow: 0 2px 4px 0 #D4D4D4; margin-top: 88px; margin-bottom: 56px;"></div>
+		<div class="about-us-wrapper" style="padding-top: 0px; background-color: #FFFFFF">
+				<div class="container" style="margin: 0; max-width: 1920px">
+					<div class="row">
+						<div class="col-12">
+							<center><span class="about-us">About Us</span></center>
+						</div>
+						<div class="col-12" style="margin-top: 40px"></div>
+						<div class="col-12">
+							<center><span class="ululatrip" style="font-size: 28px">Ululatrip</span></center>
+						</div>
+						<div class="col-12" style="margin-top: 32px"></div>
+						<div style="width: 15%"></div>
+						<div style="width: 70%">
+							<center>
+								<span class="about-us-desc">
+									You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property as a vacation rental to help defray the costs of ownership. How do you price a vacation home rental without overcharging but making enough to cover your costs? Do your research.
+								</span>
+							</center>
+						</div>
+						<div style="width: 15%"></div>
+						<div class="col-12" style="margin-top: 32px"></div>
+						<div class="col-4"></div>
+						<div class="col-4">
+							<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+							<div class="col-3">
+								<center><a href="#">
+									<img src="img/icon/instagram.png" onmouseover="this.src='img/icon/instagram-pink.png'" onmouseout="this.src='img/icon/instagram.png'">
+								</a></center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/facebook.png" onmouseover="this.src='img/icon/facebook-pink.png'" onmouseout="this.src='img/icon/facebook.png'"></a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/line.png" onmouseover="this.src='img/icon/line-pink.png'" onmouseout="this.src='img/icon/line.png'"></a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/whatsapp.png" onmouseover="this.src='img/icon/whatsapp-pink.png'" onmouseout="this.src='img/icon/whatsapp.png'"></a>
+								</center>
+							</div>
+						</div>
+						</div>
+						<div class="col-4"></div>
+						<div class="col-12" style="margin-bottom: 80px"></div>
+					</div>
+				</div>
+		</div>
+		<div class="sign-up-now">
+			<div class="container" style="margin: 0; max-width: 1920px;">
+				<div class="row">
+					<div class="col-12" style="padding-top: 56px;"></div>
+					<div class="col-12">
+						<center><span id="what-are-you-waiting">What Are You Waiting For?</span></center>
+					</div>
+					<div class="col-12" style="padding-top: 40px;"></div>
+					<div class="col-12">
+						<center><a href="#" type="button" class="btn sign-up-now-btn"><span style="position: absolute; left: 34%; top: 20%">SIGN UP NOW</span></a></center>
+					</div>
+					<div class="col-12" style="padding-bottom: 56px;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer" style="background-color: #FFFFFF">
+			<div class="container" style="margin: 0; max-width: 1920px;">
+				<div class="row">
+					<div class="col-12" style="padding-top: 56px"></div>
+					<div class="col-12">
+						<center><span class="ululatrip" style="font-size: 44px; color: #4A4A4A">Ululatrip</span></center>
+					</div>
+					<div class="col-12" style="padding-top: 24px"></div>
+					<div class="col-1"></div>
+					<div class="col-10">
+						<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+							<div class="col-2">
+								<center><a href="#" class="footer-text">About Us</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">Apply Trip Creator</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">Apply Merchant</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">Contact</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">F.A.Q</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">Package</a></center>
+							</div>
+						</div>
+					</div>
+					<div class="col-1"></div>
+					<div class="col-12" style="margin-top: 8px"></div>
+					<div class="col-3"></div>
+					<div class="col-6">
+						<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+							<div class="col-4">
+								<center><a href="#" class="footer-text-2">Privacy Policy</a></center>
+							</div>
+							<div class="col-4">
+								<center><a href="#" class="footer-text-2">Site Map</a></center>
+							</div>
+							<div class="col-4">
+								<center><a href="#" class="footer-text-2">© 2018 Ululatrip</a></center>
+							</div>
+						</div>
+					</div>
+					<div class="col-3"></div>
+					<div class="col-12" style="margin-top: 40px"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="d-sm-none">
+	<div class="container" style="margin: 0; max-width: 768px; padding: 0">
+		<header class="all-package-header-sp">
+			<div class="row">
+				<div class="col-12">
+					<ul class="nav">
+						<li><a href="#" class="ululatrip" style="padding: 0px; margin-right: 8px">Ululatrip</a></li>
+						<li>
+							<form action="#">
+								<input id="icon-sp" style="text-indent: 17px; padding-left: 24px" type="text" name="search" class="search-package-sp" placeholder='Try "Labuan Bajo"'>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="line-3"></div>
+		<div style="margin-left: 16px; margin-right: 16px; margin-top: 20px">
+			<img src="img/trekking.png" class="img-fluid rounded" onclick="openModal();currentSlide(1)">
+			<div class="package-category" style="margin-top: 8px">Aktifitas</div>
+			<div class="package-title">Judul Package 2 baris baris baris baris baris</div>
+			<div class="destinasi">Destinasi | Destinasi | Destinasi | Destinasi | Destinasi | Destinasi</div>
+			<div style="margin-top: 8px;">
+				<img src="img/icon/pin-point.png" width="12">
+				<span class="lok-dur-quo">Lokasi</span><br>
+				<img src="img/icon/time.png" width="12">
+				<span class="lok-dur-quo">Durasi</span><br>
+				<img src="img/icon/quota.png" width="12">
+				<span class="lok-dur-quo">Quota</span>
+			</div>
+			<div class="package-price-sp">Rp22.700.000 <span style="color: #9B9B9B; font-weight: 500;">per orang</span></div>
+		</div>
+		<div style="box-sizing: border-box; height: 2px; width: 100%; border: 1px solid #D4D4D4; box-shadow: 0 2px 4px 0 #D4D4D4; margin-top: 56px; margin-bottom: 16px;"></div>
+		<div style="margin-left: 16px; margin-right: 16px;">
+			<div class="package-title">Package Overview</div>
+			<div class="package-detail">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+		<div style="box-sizing: border-box; height: 2px; width: 100%; border: 1px solid #D4D4D4; box-shadow: 0 2px 4px 0 #D4D4D4; margin-top: 16px; margin-bottom: 16px;"></div>
+		<div style="margin-left: 16px; margin-right: 16px;">
+			<a href="#" onclick="expand1sp()" class="package-title" data-toggle="collapse" data-target="#itinerary-sp">Itinerary &nbsp;&nbsp;<img id="exp1-sp" src="img/icon/expand-state.png" width="16"></a>
+			<div id="itinerary-sp" class="collapse show">
+				<div class="package-day">Day 1</div>
+				<div class="day-desc">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+				<div class="package-day">Day 2</div>
+				<div class="day-desc">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+				<div class="package-day">Day 3</div>
+				<div class="day-desc">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+			<div style="margin-top: 16px"></div>
+			<a href="#" onclick="expand2sp()" class="package-title" data-toggle="collapse" data-target="#include-sp">Include &nbsp;&nbsp;<img id="exp2-sp" src="img/icon/expand-state.png" width="16"></a>
+			<div id="include-sp" class="collapse show">
+				<div class="day-desc">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+			<div style="margin-top: 16px"></div>
+			<a href="#" onclick="expand3sp()" class="package-title" data-toggle="collapse" data-target="#exclude-sp">Exclude &nbsp;&nbsp;<img id="exp3-sp" src="img/icon/expand-state.png" width="16"></a>
+			<div id="exclude-sp" class="collapse show">
+				<div class="day-desc">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+			<div style="margin-top: 16px"></div>
+			<a href="#" onclick="expand4sp()" class="package-title" data-toggle="collapse" data-target="#notes-sp">Notes &nbsp;&nbsp;<img id="exp4-sp" src="img/icon/expand-state.png" width="16"></a>
+			<div id="notes-sp" class="collapse show">
+				<div class="day-desc">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+		</div>
+		<div style="box-sizing: border-box; height: 2px; width: 100%; border: 1px solid #D4D4D4; box-shadow: 0 2px 4px 0 #D4D4D4; margin-top: 88px; margin-bottom: 56px;"></div>
+	</div>
+	<div class="about-us-wrapper" style="padding-top: 0px; background-color: #FFFFFF">
+		<div class="container" style="margin: 0; max-width: 768px">
+			<div class="row">
+				<div class="col-12">
+					<center><span class="about-us">About Us</span></center>
+				</div>
+				<div class="col-12" style="margin-top: 40px">
+					<center><span class="ululatrip-tablet">Ululatrip</span></center>
+				</div>
+				<div class="col-12" style="margin-top: 32px"></div>
+				<div style="width: 11%"></div>
+				<div style="width: 78%">
+					<center>
+						<span class="about-us-desc-sp">
+							You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property as a vacation rental to help defray the costs of ownership. How do you price a vacation home rental without overcharging but making enough to cover your costs? Do your research.
+						</span>
+					</center>
+				</div>
+				<div style="width: 11%"></div>
+				<div class="col-12" style="margin-top: 40px"></div>
+				<div class="col-1"></div>
+				<div class="col-10">
+					<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+						<div class="col-3">
+							<center>
+								<a href="#"><img src="img/icon/instagram.png" onmouseover="this.src='img/icon/instagram-pink.png'" onmouseout="this.src='img/icon/instagram.png'" width="20">
+								</a>
+							</center>
+						</div>
+						<div class="col-3">
+							<center>
+								<a href="#"><img src="img/icon/facebook.png" onmouseover="this.src='img/icon/facebook-pink.png'" onmouseout="this.src='img/icon/facebook.png'" width="20"></a>
+							</center>
+						</div>
+						<div class="col-3">
+							<center>
+								<a href="#"><img src="img/icon/line.png" onmouseover="this.src='img/icon/line-pink.png'" onmouseout="this.src='img/icon/line.png'" width="20"></a>
+							</center>
+						</div>
+						<div class="col-3">
+							<center>
+								<a href="#"><img src="img/icon/whatsapp.png" onmouseover="this.src='img/icon/whatsapp-pink.png'" onmouseout="this.src='img/icon/whatsapp.png'" width="20"></a>
+							</center>
+						</div>
+					</div>
+				</div>
+				<div class="col-1"></div>
+				<div class="col-12" style="margin-bottom: 48px"></div>
+			</div>
+		</div>
+	</div>
+	<div class="sign-up-now">
+		<div class="container" style="margin: 0; max-width: 1024px">
+			<div class="row">
+				<div class="col-12" style="padding-top: 50px;">
+					<center><span id="what-are-you-waiting">What Are You Waiting For?</span></center>
+				</div>
+				<div class="col-12" style="margin-top: 50px">
+					<center><a href="#" type="button" class="btn sign-up-now-btn" style="width: 280px"><span style="position: absolute; left: 32%; top: 20%">SIGN UP NOW</span></a></center>
+				</div>
+				<div class="col-12" style="padding-bottom: 88px;"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container" style="margin: 0; max-width: 768px;">
+			<div class="row">
+				<div class="col-12" style="padding-top: 56px">
+					<center><span class="ululatrip" style="color: #4A4A4A">Ululatrip</span></center>
+				</div>
+				<div class="col-12" style="padding-top: 24px">
+					<center><a href="#" class="footer-text">About Us</a></center>
+				</div>
+				<div class="col-12" style="padding-top: 16px">
+					<center><a href="#" class="footer-text">Apply Trip Creator</a></center>
+				</div>
+				<div class="col-12" style="padding-top: 24px">
+					<center><a href="#" class="footer-text">Apply Merchant</a></center>
+				</div>
+				<div class="col-12" style="padding-top: 24px">
+					<center><a href="#" class="footer-text">Contact</a></center>
+				</div>
+				<div class="col-12" style="padding-top: 24px">
+					<center><a href="#" class="footer-text">F.A.Q</a></center>
+				</div>
+				<div class="col-12" style="padding-top: 24px">
+					<center><a href="#" class="footer-text">Package</a></center>
+				</div>
+				<div class="col-12" style="margin-top: 56px"></div>
+				<div style="width: 10%"></div>
+				<div style="width: 25%">
+					<center><a href="#" class="footer-text-2">Privacy Policy</a></center>
+				</div>
+				<div style="width: 25%">
+					<center><a href="#" class="footer-text-2">Sitemap</a></center>
+				</div>
+				<div style="width: 30%">
+					<center><a href="#" class="footer-text-2">© 2018 Ululatrip</a></center>
+				</div>
+				<div style="width: 10%"></div>
+				<div class="col-12" style="margin-top: 88px"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="d-none d-sm-block d-lg-none">
+	<div class="container" style="margin: 0; max-width: 1024px; padding: 0">
+		<header class="all-package-header">
+			<div class="row">
+				<div class="col-9">
+					<ul class="nav">
+						<li><a href="#" class="ululatrip" style="padding: 0px; margin-right: 42px">Ululatrip</a></li>
+						<li>
+							<form action="#">
+								<input id="icon" style="text-indent: 17px; padding-left: 32px" type="text" name="search" class="search-package" placeholder='Try "Labuan Bajo", "Trekking", "Your Fav Trip Creator"'>
+							</form>
+						</li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<ul class="nav" style="float: right;">
+						<li><a href="#" class="navbar" style="margin-right: 52px; padding: 0px; color: #4A4A4A" data-toggle="modal" data-target="#login-modal">Sign In</a></li>
+						<li><a href="#" class="signup-text">SIGN UP</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="line-3"></div>
+		<div class="package-wrapper">
+			<div class="row" style="margin: 0px; padding: 0px">
+				<div class="row" style="max-width: 100%; margin: 0px; padding: 0px;">
+					<div style="max-width: 40%; margin-right: 44px;">
+						<img src="img/trekking.png" onclick="openModal();currentSlide(1)" class="rounded hover-shadow" style="max-width: 100%">
+						<div style="margin-top: 24px"></div>
+						<div style="max-width: 100%">
+							<span style="width: 25%">
+								<img src="img/trekking.png" onclick="openModal();currentSlide(1)" class="rounded hover-shadow" style="max-width: 23%; margin-right: 1%">
+							</span>
+							<span style="width: 25%">
+								<img src="img/trekking.png" onclick="openModal();currentSlide(2)" class="rounded hover-shadow" style="max-width: 23%; margin-right: 1%">
+							</span>
+							<span style="width: 25%">
+								<img src="img/trekking.png" onclick="openModal();currentSlide(3)" class="rounded hover-shadow" style="max-width: 23%; margin-right: 1%">
+							</span>
+							<span style="width: 25%">
+								<img src="img/trekking.png" onclick="openModal();currentSlide(4)" class="rounded hover-shadow" style="max-width: 23%;">
+							</span>
+						</div>
+					</div>
+					<div style="max-width: 50%; margin-right: 42px;">
+						<div class="package-category">Aktifitas</div>
+						<div class="package-title">Judul Package 2 baris baris baris baris baris</div>
+						<div class="destinasi">Destinasi | Destinasi | Destinasi | Destinasi | Destinasi | Destinasi</div>
+						<div style="margin-top: 8px;">
+							<img src="img/icon/pin-point.png" width="12">
+							<span class="lok-dur-quo">Lokasi</span><br>
+							<img src="img/icon/time.png" width="12">
+							<span class="lok-dur-quo">Durasi</span><br>
+							<img src="img/icon/quota.png" width="12">
+							<span class="lok-dur-quo">Quota</span>
+							<span class="package-price">Rp22.700.000 <span style="color: #9B9B9B; font-weight: 500">per orang</span></span>
+						</div>
+						<div class="line-package"></div>
+						<div class="package-title">Package Overview</div>
+						<div class="package-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+					</div>
+					<div style="max-width: 95%; margin-top: 32px">
+						<a href="#" onclick="expand1()" class="package-title" data-toggle="collapse" data-target="#itinerary">Itinerary &nbsp;&nbsp;<img id="exp1" src="img/icon/expand-state.png" width="16"></a>
+						<div id="itinerary" class="collapse show">
+							<div class="package-day">Day 1</div>
+							<div class="day-desc">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+							<div class="package-day">Day 2</div>
+							<div class="day-desc">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+							<div class="package-day">Day 3</div>
+							<div class="day-desc">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+						<div style="margin-top: 32px"></div>
+						<a href="#" onclick="expand2()" class="package-title" data-toggle="collapse" data-target="#include">Include &nbsp;&nbsp;<img id="exp2" src="img/icon/expand-state.png" width="16"></a>
+						<div id="include" class="collapse show">
+							<div class="day-desc">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+						<div style="margin-top: 32px"></div>
+						<a href="#" onclick="expand3()" class="package-title" data-toggle="collapse" data-target="#exclude">Exclude &nbsp;&nbsp;<img id="exp3" src="img/icon/expand-state.png" width="16"></a>
+						<div id="exclude" class="collapse show">
+							<div class="day-desc">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+						<div style="margin-top: 32px"></div>
+						<a href="#" onclick="expand4()" class="package-title" data-toggle="collapse" data-target="#notes">Notes &nbsp;&nbsp;<img id="exp4" src="img/icon/expand-state.png" width="16"></a>
+						<div id="notes" class="collapse show">
+							<div class="day-desc">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="box-sizing: border-box; height: 2px; width: 100%; border: 1px solid #D4D4D4; box-shadow: 0 2px 4px 0 #D4D4D4; margin-top: 88px; margin-bottom: 56px;"></div>
+		<div class="about-us-wrapper" style="padding-top: 0px; background-color: #FFFFFF">
+				<div class="container" style="margin: 0; max-width: 1920px">
+					<div class="row">
+						<div class="col-12">
+							<center><span class="about-us">About Us</span></center>
+						</div>
+						<div class="col-12" style="margin-top: 40px"></div>
+						<div class="col-12">
+							<center><span class="ululatrip" style="font-size: 28px">Ululatrip</span></center>
+						</div>
+						<div class="col-12" style="margin-top: 32px"></div>
+						<div style="width: 15%"></div>
+						<div style="width: 70%">
+							<center>
+								<span class="about-us-desc">
+									You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property as a vacation rental to help defray the costs of ownership. How do you price a vacation home rental without overcharging but making enough to cover your costs? Do your research.
+								</span>
+							</center>
+						</div>
+						<div style="width: 15%"></div>
+						<div class="col-12" style="margin-top: 32px"></div>
+						<div class="col-4"></div>
+						<div class="col-4">
+							<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+							<div class="col-3">
+								<center><a href="#">
+									<img src="img/icon/instagram.png" onmouseover="this.src='img/icon/instagram-pink.png'" onmouseout="this.src='img/icon/instagram.png'">
+								</a></center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/facebook.png" onmouseover="this.src='img/icon/facebook-pink.png'" onmouseout="this.src='img/icon/facebook.png'"></a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/line.png" onmouseover="this.src='img/icon/line-pink.png'" onmouseout="this.src='img/icon/line.png'"></a>
+								</center>
+							</div>
+							<div class="col-3">
+								<center>
+									<a href="#"><img src="img/icon/whatsapp.png" onmouseover="this.src='img/icon/whatsapp-pink.png'" onmouseout="this.src='img/icon/whatsapp.png'"></a>
+								</center>
+							</div>
+						</div>
+						</div>
+						<div class="col-4"></div>
+						<div class="col-12" style="margin-bottom: 80px"></div>
+					</div>
+				</div>
+		</div>
+		<div class="sign-up-now">
+			<div class="container" style="margin: 0; max-width: 1920px;">
+				<div class="row">
+					<div class="col-12" style="padding-top: 56px;"></div>
+					<div class="col-12">
+						<center><span id="what-are-you-waiting">What Are You Waiting For?</span></center>
+					</div>
+					<div class="col-12" style="padding-top: 40px;"></div>
+					<div class="col-12">
+						<center><a href="#" type="button" class="btn sign-up-now-btn"><span style="position: absolute; left: 34%; top: 20%">SIGN UP NOW</span></a></center>
+					</div>
+					<div class="col-12" style="padding-bottom: 56px;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer" style="background-color: #FFFFFF">
+			<div class="container" style="margin: 0; max-width: 1920px;">
+				<div class="row">
+					<div class="col-12" style="padding-top: 56px"></div>
+					<div class="col-12">
+						<center><span class="ululatrip" style="font-size: 44px; color: #4A4A4A">Ululatrip</span></center>
+					</div>
+					<div class="col-12" style="padding-top: 24px"></div>
+					<div class="col-1"></div>
+					<div class="col-10">
+						<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+							<div class="col-2">
+								<center><a href="#" class="footer-text">About Us</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">Apply Trip Creator</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">Apply Merchant</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">Contact</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">F.A.Q</a></center>
+							</div>
+							<div class="col-2">
+								<center><a href="#" class="footer-text">Package</a></center>
+							</div>
+						</div>
+					</div>
+					<div class="col-1"></div>
+					<div class="col-12" style="margin-top: 8px"></div>
+					<div class="col-3"></div>
+					<div class="col-6">
+						<div class="row" style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+							<div class="col-4">
+								<center><a href="#" class="footer-text-2">Privacy Policy</a></center>
+							</div>
+							<div class="col-4">
+								<center><a href="#" class="footer-text-2">Site Map</a></center>
+							</div>
+							<div class="col-4">
+								<center><a href="#" class="footer-text-2">© 2018 Ululatrip</a></center>
+							</div>
+						</div>
+					</div>
+					<div class="col-3"></div>
+					<div class="col-12" style="margin-top: 40px"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="image_modal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content" style="background-color: transparent;">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img/trekking.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img/trekking.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img/trekking.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img/trekking.png" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)" style="color: white">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)" style="color: white">&#10095;</a>
+
+    <!-- Caption text -->
+    <div style="margin-top: 16px">
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="row">
+      <div class="col-3">
+      	<center><img class="demo rounded" src="img/trekking.png" onclick="currentSlide(1)" style="width: 100%"></center>
+      </div>
+      <div class="col-3">
+      	<center><img class="demo rounded" src="img/trekking.png" onclick="currentSlide(2)" style="width: 100%"></center>
+      </div>
+      <div class="col-3">
+      	<center><img class="demo rounded" src="img/trekking.png" onclick="currentSlide(3)" style="width: 100%"></center>
+      </div>
+      <div class="col-3">
+      	<center><img class="demo rounded" src="img/trekking.png" onclick="currentSlide(4)" style="width: 100%"></center>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+	// Open the Modal
+	function openModal() {
+	  document.getElementById('image_modal').style.display = "block";
+	}
+
+	// Close the Modal
+	function closeModal() {
+	  document.getElementById('image_modal').style.display = "none";
+	}
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	// Next/previous controls
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	// Thumbnail image controls
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("demo");
+	  var captionText = document.getElementById("caption");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	  captionText.innerHTML = dots[slideIndex-1].alt;
+	}
+</script>
+
+<script type="text/javascript">
+	function expand1() {
+		if ($('#exp1').attr('src') === 'img/icon/minimize-state-dark-grey.png')
+		{
+			$('#exp1').attr('src', 'img/icon/expand-state.png');
+		}
+		else
+		{
+			$('#exp1').attr('src', 'img/icon/minimize-state-dark-grey.png');
+		}
+	}
+
+	function expand2() {
+		if ($('#exp2').attr('src') === 'img/icon/minimize-state-dark-grey.png')
+		{
+			$('#exp2').attr('src', 'img/icon/expand-state.png');
+		}
+		else
+		{
+			$('#exp2').attr('src', 'img/icon/minimize-state-dark-grey.png');
+		}
+	}
+
+	function expand3() {
+		if ($('#exp3').attr('src') === 'img/icon/minimize-state-dark-grey.png')
+		{
+			$('#exp3').attr('src', 'img/icon/expand-state.png');
+		}
+		else
+		{
+			$('#exp3').attr('src', 'img/icon/minimize-state-dark-grey.png');
+		}
+	}
+
+	function expand4() {
+		if ($('#exp4').attr('src') === 'img/icon/minimize-state-dark-grey.png')
+		{
+			$('#exp4').attr('src', 'img/icon/expand-state.png');
+		}
+		else
+		{
+			$('#exp4').attr('src', 'img/icon/minimize-state-dark-grey.png');
+		}
+	}
+
+	function expand1sp() {
+		if ($('#exp1-sp').attr('src') === 'img/icon/minimize-state-dark-grey.png')
+		{
+			$('#exp1-sp').attr('src', 'img/icon/expand-state.png');
+		}
+		else
+		{
+			$('#exp1-sp').attr('src', 'img/icon/minimize-state-dark-grey.png');
+		}
+	}
+
+	function expand2sp() {
+		if ($('#exp2-sp').attr('src') === 'img/icon/minimize-state-dark-grey.png')
+		{
+			$('#exp2-sp').attr('src', 'img/icon/expand-state.png');
+		}
+		else
+		{
+			$('#exp2-sp').attr('src', 'img/icon/minimize-state-dark-grey.png');
+		}
+	}
+
+	function expand3sp() {
+		if ($('#exp3-sp').attr('src') === 'img/icon/minimize-state-dark-grey.png')
+		{
+			$('#exp3-sp').attr('src', 'img/icon/expand-state.png');
+		}
+		else
+		{
+			$('#exp3-sp').attr('src', 'img/icon/minimize-state-dark-grey.png');
+		}
+	}
+
+	function expand4sp() {
+		if ($('#exp4-sp').attr('src') === 'img/icon/minimize-state-dark-grey.png')
+		{
+			$('#exp4-sp').attr('src', 'img/icon/expand-state.png');
+		}
+		else
+		{
+			$('#exp4-sp').attr('src', 'img/icon/minimize-state-dark-grey.png');
+		}
+	}
+</script>
+
+</body>
+</html>
